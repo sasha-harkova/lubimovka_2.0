@@ -1,0 +1,26 @@
+/* VENDOR */
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+/* PAGE */
+@import url(../blocks/root/root.css);
+
+/* HEADER */
+/* ---------------------------------CONTENT ----------------------------------*/
+/* ELSE */
+/* ABOUT */
+/* VIDEO */
+/* FIRST-VIDEO-SLIDER */
+/* SECOND-VIDEO-SLIDER */
+/* PHOTO */
+/* MANY-PERFORMANCES */
+/* TWO-PERFORMANCES */
+/* ONE-PERFORMANCE */
+/* PLAYS */
+/* PERSONS */
+/* BLOCK-WITH-BUTTON */
+/* COOPERATION */
+/* ---------------------------------CONTENT ----------------------------------*/
+/* FOOTER */
+/* BURGER-POPUP */
+/* PHOTO-POPUP */
