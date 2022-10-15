@@ -4,6 +4,7 @@
 
 /* PAGE */
 @import url(../blocks/root/root.css);
+@import url(../blocks/section-title/section-title.css);
 
 /* HEADER */
 /* ---------------------------------CONTENT ----------------------------------*/
@@ -16,8 +17,20 @@
 /* PERFORMANCES */
 /* PLAYS */
 /* PERSONS */
+
 /* BLOCK-WITH-BUTTON */
+@import url(../blocks/block-with-button/block-with-button.css);
+@import url(../blocks/block-with-button/__title/block-with-button__title.css);
+@import url(../blocks/block-with-button/__paragraph/block-with-button__paragraph.css);
+@import url(../blocks/block-with-button/__link/block-with-button__link.css);
+@import url(../blocks/block-with-button/__arrow/block-with-button__arrow.css);
+
 /* COOPERATION */
+@import url(../blocks/cooperation/cooperation.css);
+@import url(../blocks/cooperation/__asterisk/cooperation__asterisk.css);
+@import url(../blocks/cooperation/__title/cooperation__title.css);
+@import url(../blocks/cooperation/__paragraph/cooperation__paragraph.css);
+@import url(../blocks/cooperation/__link/cooperation__link.css);
 /* ---------------------------------CONTENT ----------------------------------*/
 
 /* FOOTER */
@@ -35,22 +48,17 @@
 @import url(../blocks/footer/__partners/footer__partners.css);
 @import url(../blocks/footer/__partners-caption/footer__partners-caption.css);
 @import url(../blocks/footer/__partners-list/footer__partners-list.css);
-@import url(../blocks/footer/__partner-container/footer__partner-container.css);
-@import url(../blocks/footer/__partner-link/footer__partner-link.css);
 @import url(../blocks/footer/__partner-logo/footer__partner-logo.css);
 @import url(../blocks/footer/__partner-caption/footer__partner-caption.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/footer/__terms/footer__terms.css);
 @import url(../blocks/footer/__terms-copyright/footer__terms-copyright.css);
-@import url(../blocks/footer/__terms-privacy/footer__terms-privacy.css);
 @import url(../blocks/footer/__authors/footer__authors.css);
 @import url(../blocks/footer/__designers/footer__designers.css);
 @import url(../blocks/footer/__designers-logo/footer__designers-logo.css);
 @import url(../blocks/footer/__designers-text/footer__designers-text.css);
-@import url(../blocks/footer/__designers-link/footer__designers-link.css);
 @import url(../blocks/footer/__developers/footer__developers.css);
 @import url(../blocks/footer/__developers-text/footer__developers-text.css);
-@import url(../blocks/footer/__developers-link/footer__developers-link.css);
 
 /* BURGER-POPUP */
 /* PHOTO-POPUP */
