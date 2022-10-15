@@ -1,0 +1,6 @@
+.footer__logo {
+  min-width: 93px;
+  margin: 0;
+  padding: 0;
+  grid-area: footer__logo;
+}

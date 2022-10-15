@@ -1,0 +1,5 @@
+.footer__links {
+  display: flex;
+  grid-area: footer__links;
+  justify-self: end;
+}
