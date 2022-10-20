@@ -8,6 +8,7 @@
   <meta name="keywords" content="любимовка, феcтиваль, драматургия, театр">
   <title>Любимовка</title>
   <link rel="icon" href="images/lubimovka_logo.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="pages/index.css" />
 </head>
 
@@ -19,8 +20,22 @@
     <section class="video"></section>
     <section class="photo"></section>
     <section class="performances"></section>
-    <section class="plays"></section>
-    <section class="persons"></section>
+    <section class="plays">
+      <h2 class="plays__heading">Заголовок блока с пьесами</h2>
+      <div class="plays__cards">
+        <div class="plays__wrapper">
+
+        </div>
+      </div>
+    </section>
+    <section class="persons">
+      <h2 class="persons__heading">Заголовок блока с персонами</h2>
+      <div class="persons__cards">
+        <div class="persons__wrapper">
+
+        </div>
+      </div>
+    </section>
     <section class="block-with-button"></section>
     <section class="cooperation"></section>
   </main>
@@ -28,6 +43,49 @@
   <div class="burger-popup"></div>
   <div class="photo-popup"></div>
 
+  <!-- PLAYS SECTION SLIDE TEMPLATE -->
+  <template id="plays-slider">
+    <div class="plays__slide">
+      <article class="plays__card">
+        <div class="plays__card-body">
+          <h3 class="plays__card-title">Солнечная линия</h3>
+          <div class="plays__card-buttons-container">
+            <a href="#" class="link-button">
+              <p class="link-button__text">Смотреть читку</p>
+              <img src="./images/icon_arrow.svg" alt="Стрелка."
+                class="link-button__img link-button__img_direction_up-right">
+            </a>
+            <a href="#" class="link-button">
+              <p class="link-button__text">Скачать пьесу</p>
+              <img src="./images/icon_arrow.svg" alt="Стрелка."
+                class="link-button__img link-button__img_direction_down">
+            </a>
+          </div>
+        </div>
+        <div class="plays__card-caption">
+          <h4 class="plays__card-caption-title">Екатерина Августеняк</h4>
+          <p class="plays__card-caption-city">Санкт-Петербург</p>
+          <p class="plays__card-caption-year">2020</p>
+        </div>
+      </article>
+    </div>
+  </template>
+
+  <!-- PERSONS SECTION SLIDE TEMPLATE -->
+  <template id="persons-slider">
+    <div class="persons__slide">
+      <div class="persons__card">
+        <div class="persons__card-photo"></div>
+        <div class="persons__card-caption">
+          <p class="persons__card-caption-name">Тереза Шимчак</p>
+          <p class="persons__card-caption-about">Драматург, сценарист, преподаватель</p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./scripts/initial-cards.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 

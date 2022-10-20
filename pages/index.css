@@ -7,7 +7,7 @@
 
 /* HEADER */
 /* ---------------------------------CONTENT ----------------------------------*/
-@import url(../blocks/content/content.css);
+/* @import url(../blocks/content/content.css); */
 
 /* ELSE */
 /* ABOUT */
@@ -15,7 +15,38 @@
 /* PHOTO */
 /* PERFORMANCES */
 /* PLAYS */
+@import url(../blocks/plays/plays.css);
+@import url(../blocks/plays/__heading/plays__heading.css);
+@import url(../blocks/plays/__cards/plays__cards.css);
+@import url(../blocks/plays/__wrapper/plays__wrapper.css);
+@import url(../blocks/plays/__slide/plays__slide.css);
+@import url(../blocks/plays/__card/plays__card.css);
+@import url(../blocks/plays/__card-body/plays__card-body.css);
+@import url(../blocks/plays/__card-title/plays__card-title.css);
+@import url(../blocks/plays/__card-buttons-container/plays__card-buttons-container.css);
+@import url(../blocks/plays/__card-caption/plays__card-caption.css);
+@import url(../blocks/plays/__card-caption-title/plays__card-caption-title.css);
+@import url(../blocks/plays/__card-caption-city/plays__card-caption-city.css);
+@import url(../blocks/plays/__card-caption-year/plays__card-caption-year.css);
+/* link-button */
+@import url(../blocks/link-button/link-button.css);
+@import url(../blocks/link-button/__text/link-button__text.css);
+@import url(../blocks/link-button/__img/link-button__img.css);
+@import url(../blocks/link-button/__img/_direction/link-button__img_direction_up-right.css);
+@import url(../blocks/link-button/__img/_direction/link-button__img_direction_down.css);
+
 /* PERSONS */
+@import url(../blocks/persons/persons.css);
+@import url(../blocks/persons/__heading/persons__heading.css);
+@import url(../blocks/persons/__slide/persons__slide.css);
+@import url(../blocks/persons/__cards/persons__cards.css);
+@import url(../blocks/persons/__wrapper/persons__wrapper.css);
+@import url(../blocks/persons/__card/persons__card.css);
+@import url(../blocks/persons/__card-photo/persons__card-photo.css);
+@import url(../blocks/persons/__card-caption/persons__card-caption.css);
+@import url(../blocks/persons/__card-caption-name/persons__card-caption-name.css);
+@import url(../blocks/persons/__card-caption-about/persons__card-caption-about.css);
+
 /* BLOCK-WITH-BUTTON */
 /* COOPERATION */
 /* ---------------------------------CONTENT ----------------------------------*/
