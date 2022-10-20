@@ -1,0 +1,18 @@
+.footer {
+  max-width: 1316px;
+  width: 100%;
+  margin: 0;
+  padding: 42px 92px 56px 32px;
+  font-family: 'Formular', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #242424;
+  display: grid;
+  grid-template-columns: 93px auto 279px 212px;
+  grid-template-rows: 80px auto auto;
+  gap: 21px 77px;
+  grid-template-areas: 
+    "footer__logo footer__partners footer__partners footer__partners"
+    ". footer__address footer__links footer__links-allprojects"
+    ". footer__info footer__info footer__info";
+}
