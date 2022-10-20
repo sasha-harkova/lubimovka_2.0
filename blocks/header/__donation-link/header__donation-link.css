@@ -1,0 +1,15 @@
+.header__donation-link {
+  padding: 0 10px 0 10px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__donation-link {
+    padding: 0 5px 0 5px;
+    margin: 0 2px;
+  }
+}

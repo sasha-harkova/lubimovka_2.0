@@ -1,0 +1,16 @@
+.header__projects {
+  position: absolute;
+  left: 30px;
+  bottom: -64px;
+  border-bottom: 1px solid #242424;
+  border-right: 1px solid #242424;  
+}
+
+@media screen and (max-width: 1023px) {
+  .header__projects {
+    margin-top: 28px;
+    position: static;
+    left: 0;
+    bottom: 0;
+  }
+}

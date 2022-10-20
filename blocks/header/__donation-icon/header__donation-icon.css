@@ -1,0 +1,12 @@
+.header__donation-icon {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__donation-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

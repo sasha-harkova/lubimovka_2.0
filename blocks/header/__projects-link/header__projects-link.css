@@ -1,0 +1,7 @@
+.header__projects-link {
+  padding: 10px 0 10px 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
