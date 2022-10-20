@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 93px auto 279px 212px;
   grid-template-rows: 80px auto auto;
-  gap: 21px 77px;
+  gap: 23px 77px;
   grid-template-areas: 
     "footer__logo footer__partners footer__partners footer__partners"
     ". footer__address footer__links footer__links-allprojects"

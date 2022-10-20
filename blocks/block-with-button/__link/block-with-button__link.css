@@ -1,0 +1,44 @@
+.block-with-button__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #242424;
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  border: 1px solid #000;
+  margin: 109px 3px 19px;
+  padding: 16px 19px 16px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.block-with-button__link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #242424;
+  transition: width .5s ease;
+  z-index: -3;
+}
+.block-with-button__link:hover:before {
+  width: 100%;
+}
+.block-with-button__link:hover {
+  color: #fff;
+  transition: color .4s linear;
+}
+
+.block-with-button__link:hover img {
+  filter: invert(100%);
+  transition: .7s ease;
+}
+
+.block-with-button__link:active {
+  transform: scale(1.05);
+  transition: transform .2s ease;
+}

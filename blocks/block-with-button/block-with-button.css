@@ -1,0 +1,8 @@
+.block-with-button {
+  background-color: #B7C09D;
+  color: #242424;
+  margin: 100px 0 0;
+  padding: 71px 268px 141px 361px;
+  display: flex;
+  gap: 95px;
+}
