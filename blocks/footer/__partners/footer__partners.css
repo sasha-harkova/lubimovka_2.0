@@ -1,0 +1,5 @@
+.footer__partners {
+  display: flex;
+  padding: 6px 0 0 8px;
+  grid-area: footer__partners;
+}

@@ -8,6 +8,7 @@
   <meta name="keywords" content="любимовка, феcтиваль, драматургия, театр">
   <title>Любимовка</title>
   <link rel="icon" href="images/lubimovka_logo.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="pages/index.css" />
 </head>
 
@@ -53,14 +54,200 @@
     <section class="video"></section>
     <section class="photo"></section>
     <section class="performances"></section>
-    <section class="plays"></section>
-    <section class="persons"></section>
-    <section class="block-with-button"></section>
-    <section class="cooperation"></section>
+    <section class="plays">
+      <h2 class="section-title section-title_short">Заголовок блока с пьесами</h2>
+      <div class="plays__cards">
+        <div class="plays__wrapper"></div>
+      </div>
+    </section>
+    <section class="persons">
+      <h2 class="section-title section-title_short">Заголовок блока с персонами</h2>
+      <div class="persons__cards">
+        <div class="persons__wrapper"></div>
+      </div>
+    </section>
+    <section class="block-with-button">
+      <div class="block-with-button__text">
+        <h2 class="block-with-button__title">Заголовок блока с&nbsp;кнопкой/ссылкой</h2>
+        <p class="block-with-button__paragraph">Видео прошедших мероприятий можно посмотреть в&nbsp;плейлисте
+          на&nbsp;канале Любимовки в&nbsp;YouTube</p>
+      </div>
+      <a class="pseudo-button block-with-button__link"
+        href="https://www.youtube.com/channel/UCDZ1HTzBVBxm_vw6tV7C3lg">YOUTUBE<img
+          class="pseudo-button__arrow block-with-button__arrow" src="./images/icon_arrow.svg"
+          alt="Перейти на YouTube"></a>
+    </section>
+    <section class="cooperation">
+      <img class="cooperation__asterisk" src="./images/icon_asterisk.svg">
+      <h2 class="cooperation__title">Проект открыт к&nbsp;сотрудничеству</h2>
+      <p class="cooperation__paragraph">Мы&nbsp;находимся в&nbsp;постоянном поиске режиссёров и&nbsp;актеров,
+        заинтересованных в&nbsp;постановке читок.</p>
+      <p class="cooperation__paragraph">Пишите на&nbsp;<a class="cooperation__link" href="#">more@lubimovka.ru</a></p>
+    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <img src="./images/lubimovka_logo_footer.svg" alt="Логотип `Любимовка`" class="footer__logo">
+    <div class="footer__address">
+      <p class="footer__address-place">Площадка &laquo;8/3&raquo;</p>
+      <p class="footer__address-direction">Москва, ул.&nbsp;Казакова,&nbsp;8,&nbsp;стр.&nbsp;3.
+        Метро&nbsp;&laquo;Курская&raquo;</p>
+    </div>
+    <nav class="footer__links">
+      <ul class="footer__links-list">
+        <li class="footer__links-list-item">
+          <a href="#" class="footer__link">Любимовка</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/events" target="_blank" class="footer__link">Афиша</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/library" target="_blank" class="footer__link">Библиотека</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/blog" target="_blank" class="footer__link">Блог</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/news" target="_blank" class="footer__link">Новости</a>
+        </li>
+      </ul>
+      <ul class="footer__links-list">
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/about-us" target="_blank" class="footer__link">О фестивале</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/about-us/team" target="_blank" class="footer__link">Организаторы</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/history" target="_blank" class="footer__link">История</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/contacts" target="_blank" class="footer__link">Контакты</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/press-releases" target="_blank" class="footer__link">Для прессы</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer__links-allprojects">
+      <ul class="footer__links-list">
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/projects" target="_blank" class="footer__link">Все проекты</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/projects/1" target="_blank" class="footer__link">Любимовка.Ещё</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/projects/4" target="_blank" class="footer__link">Спектакли</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/projects/3" target="_blank" class="footer__link">Сборник Любимовка.Пьесы</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.ru/lark" target="_blank" class="footer__link">Lark+Любимовка</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.ru/postdramaturg" target="_blank" class="footer__link">Практика постдраматурга</a>
+        </li>
+        <li class="footer__links-list-item">
+          <a href="https://lubimovka.art/projects/2" target="_blank" class="footer__link">Эхо Любимовки</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer__partners">
+      <p class="footer__partners-caption footer__caption">Генеральные партнеры</p>
+      <ul class="footer__partners-list">
+        <li class="footer__partner-container">
+          <a href="https://www.prokhorovfund.ru/" target="_blank" class="footer__partner-link">
+            <img src="./images/partners-logo_fond.svg" alt="Логотип `Фонд Михаила Прохорова`"
+              class="footer__partner-logo">
+          </a>
+          <p class="footer__partner-caption footer__caption">Генеральный партнёр</p>
+        </li>
+        <li class="footer__partner-container">
+          <a href="https://mosbrew.ru/" target="_blank" class="footer__partner-link">
+            <img src="./images/partners-logo_mosbrew.svg" alt="Логотип `Mosbrew`" class="footer__partner-logo">
+          </a>
+        </li>
+        <li class="footer__partner-container">
+          <a href="https://sbtg.ru/" target="_blank" class="footer__partner-link">
+            <img src="./images/partners-logo_sbtg.svg" alt="Логотип `SBTG`" class="footer__partner-logo">
+          </a>
+          <p class="footer__partner-caption">Онлайн-трансляции</p>
+        </li>
+        <li class="footer__partner-container">
+          <a href="https://www.youtube.com/channel/UCp2J7GRxQ36QLqW4ReLLt5g" target="_blank"
+            class="footer__partner-link">
+            <img src="./images/partners-logo_apogovorit.svg" alt="Логотип `А поговорить`" class="footer__partner-logo">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__info">
+      <div class="footer__terms">
+        <p class="footer__terms-copyright">&copy;&nbsp;Любимовка, 2021</p>
+        <a class="footer__terms-privacy footer__link" href="https://disk.yandex.ru/i/58bHCVcPk8dIgQ"
+          target="_blank">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__authors">
+        <div class="footer__designers">
+          <img src="./images/shishki_logo.svg" alt="Логотип `Shishki collective`" class="footer__designers-logo">
+          <p class="footer__designers-text">дизайн сайта&nbsp;&mdash; <a class="footer__designers-link footer__link"
+              href="" target="_blank">shishki.collective</a></p>
+        </div>
+        <div class="footer__developers">
+          <p class="footer__developers-text">вёрстка&nbsp;и&nbsp;разработка&nbsp;&mdash; студенты <a
+              class="footer__developers-link footer__link" href="https://practicum.yandex.ru">Яндекс.Практикума</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <div class="burger-popup"></div>
   <div class="photo-popup"></div>
+
+  <!-- PLAYS SECTION SLIDE TEMPLATE -->
+  <template id="plays-slider">
+    <div class="plays__slide">
+      <article class="plays__card">
+        <div class="plays__card-body">
+          <h3 class="plays__card-title">Солнечная линия</h3>
+          <div class="plays__card-buttons-container">
+            <a href="#" class="link-button">
+              <p class="link-button__text">Смотреть читку</p>
+              <img src="./images/icon_arrow.svg" alt="Стрелка."
+                class="link-button__img link-button__img_direction_up-right">
+            </a>
+            <a href="#" class="link-button">
+              <p class="link-button__text">Скачать пьесу</p>
+              <img src="./images/icon_arrow.svg" alt="Стрелка."
+                class="link-button__img link-button__img_direction_down">
+            </a>
+          </div>
+        </div>
+        <div class="plays__card-caption">
+          <h4 class="plays__card-caption-title">Екатерина Августеняк</h4>
+          <p class="plays__card-caption-city">Санкт-Петербург</p>
+          <p class="plays__card-caption-year">2020</p>
+        </div>
+      </article>
+    </div>
+  </template>
+
+  <!-- PERSONS SECTION SLIDE TEMPLATE -->
+  <template id="persons-slider">
+    <div class="persons__slide">
+      <div class="persons__card">
+        <div class="persons__card-photo"></div>
+        <div class="persons__card-caption">
+          <p class="persons__card-caption-name">Тереза Шимчак</p>
+          <p class="persons__card-caption-about">Драматург, сценарист, преподаватель</p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./scripts/initial-cards.js"></script>
+
   <script src="scripts/index.js"></script>
 </body>
 

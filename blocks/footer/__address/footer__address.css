@@ -1,0 +1,5 @@
+.footer__address {
+  max-width: 231px;
+  grid-area: footer__address;
+  padding-left: 8px;
+}

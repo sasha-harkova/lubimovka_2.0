@@ -1,0 +1,6 @@
+.plays__slide {
+    margin: 0;
+    padding: 0;
+    max-width: 240px;
+    flex-shrink: 0;
+}

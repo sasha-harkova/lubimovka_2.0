@@ -1,0 +1,9 @@
+.footer__links-list {
+  list-style-type: none;
+  margin: 0 0 0 100px;
+  padding: 0;
+}
+
+.footer__links-list:first-of-type {
+  margin: 0;
+}
