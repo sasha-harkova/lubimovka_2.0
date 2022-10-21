@@ -2,13 +2,11 @@
   position: absolute;
   left: 30px;
   bottom: -64px;
-  border-bottom: 1px solid #242424;
-  border-right: 1px solid #242424;  
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .header__projects {
-    margin-top: 28px;
+    margin-top: 34px;
     position: static;
     left: 0;
     bottom: 0;

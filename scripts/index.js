@@ -66,3 +66,17 @@ function loadInitialCards(cards, createFunction, swiper) {
 
 loadInitialCards(playsInitialCards, createPlayCard, playsSwiper);
 loadInitialCards(personsInitialCards, createPersonCard, personsSwiper);
+
+
+
+//открытие попапа бургерного меню
+
+const burgerPopup = document.querySelector('.burger-popup');
+  const burgerButton = document.querySelector('.burger-button');
+
+function toggleBurgerMenu() {  
+  burgerPopup.classList.toggle('burger-popup_opened');
+  burgerButton.classList.toggle('burger-button_active');
+}
+
+burgerButton.addEventListener('click', toggleBurgerMenu);

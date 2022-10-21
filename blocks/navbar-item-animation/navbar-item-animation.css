@@ -1,7 +1,7 @@
 .navbar-item-animation:before {
   content: "";
   font-family: 'Formular', 'Arial', sans-serif;;
-  border: 1px solid #242424;
+  border: 0.0625rem solid #242424;
   border-right: none;
   border-bottom-left-radius: 200% 100%;
   border-top-left-radius: 200% 100%;

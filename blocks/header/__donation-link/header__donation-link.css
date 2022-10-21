@@ -13,3 +13,9 @@
     margin: 0 2px;
   }
 }
+
+@media screen and (max-width: 920px) {
+  .header__donation-link {
+    padding: 0 4px 0 4px;
+  }
+}

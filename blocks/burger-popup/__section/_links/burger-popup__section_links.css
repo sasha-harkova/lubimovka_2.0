@@ -1,0 +1,10 @@
+.burger-popup__section_links {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+  .burger-popup__section_links {
+    display: block;
+  }
+}

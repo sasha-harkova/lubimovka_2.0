@@ -4,6 +4,7 @@
 
 /* PAGE */
 @import url(../blocks/root/root.css);
+
 /* item-navbar */
 @import url(../blocks/navbar-item-animation/navbar-item-animation.css);
 /* link-button */
@@ -34,6 +35,7 @@
 @import url(../blocks/header/__projects-link/header__projects-link.css);
 @import url(../blocks/header/__projects-text/header__projects-text.css);
 @import url(../blocks/header/__projects-icon/header__projects-icon.css);
+
 
 /* ---------------------------------CONTENT ----------------------------------*/
 /* ELSE */
@@ -109,6 +111,16 @@
 @import url(../blocks/footer/__developers-text/footer__developers-text.css);
 
 /* BURGER-POPUP */
+@import url(../blocks/burger-button/burger-button.css);
+@import url(../blocks/burger-button/_active/burger-button_active.css);
+@import url(../blocks/burger-popup/burger-popup.css);
+@import url(../blocks/burger-popup/_opened/burger-popup_opened.css);
+@import url(../blocks/burger-popup/__logo/burger-popup__logo.css);
+@import url(../blocks/burger-popup/__section/burger-popup__section.css);
+@import url(../blocks/burger-popup/__section/_links/burger-popup__section_links.css);
+@import url(../blocks/burger-popup/__navbar-item/burger-popup__navbar-item.css);
+@import url(../blocks/burger-popup/__navbar-link/burger-popup__navbar-link.css);
+
 /* PHOTO-POPUP */
 
 
