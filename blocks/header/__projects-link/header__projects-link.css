@@ -1,7 +1,8 @@
 .header__projects-link {
-  padding: 10px 0 10px 10px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  position: relative;
+  padding: 0 0 5px 10px;
+  height: auto;
+  border-top: none;
+  border-left: none;
+  border-bottom: 1px solid #242424;
+  border-right: 1px solid #242424;  
 }

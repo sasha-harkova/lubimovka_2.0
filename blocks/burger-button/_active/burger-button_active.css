@@ -1,0 +1,7 @@
+.burger-button_active {
+  background-image: url(../../../images/icon_close-icon.svg);
+  background-size: 20px 20px;
+  transition-property: background-image, background-size;
+  transition-duration: .2s, .2s;
+  transition-timing-function: linear;
+}
