@@ -1,0 +1,14 @@
+.header__navbar {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__navbar {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+}

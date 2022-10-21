@@ -4,6 +4,10 @@
 
 /* PAGE */
 @import url(../blocks/root/root.css);
+
+=======
+/* item-navbar */
+@import url(../blocks/navbar-item-animation/navbar-item-animation.css);
 /* link-button */
 @import url(../blocks/link-button/link-button.css);
 @import url(../blocks/link-button/__text/link-button__text.css);
@@ -14,7 +18,26 @@
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_short/section-title_short.css);
 
+
 /* HEADER */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__navbar/header__navbar.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__section/header__section.css);
+@import url(../blocks/header/__list/header__list.css);
+@import url(../blocks/header/__section/_menu/header__section_menu.css);
+@import url(../blocks/header/__section/_links/header__section_links.css);
+@import url(../blocks/header/__navbar-item/header__navbar-item.css);
+@import url(../blocks/header/__navbar-link/header__navbar-link.css);
+@import url(../blocks/header/__section/_donation/header__section_donation.css);
+@import url(../blocks/header/__donation-link/header__donation-link.css);
+@import url(../blocks/header/__donation-icon/header__donation-icon.css);
+@import url(../blocks/header/__donation-text/header__donation-text.css);
+@import url(../blocks/header/__projects/header__projects.css);
+@import url(../blocks/header/__projects-link/header__projects-link.css);
+@import url(../blocks/header/__projects-text/header__projects-text.css);
+@import url(../blocks/header/__projects-icon/header__projects-icon.css);
+
 /* ---------------------------------CONTENT ----------------------------------*/
 /* ELSE */
 /* ABOUT */
@@ -90,3 +113,5 @@
 
 /* BURGER-POPUP */
 /* PHOTO-POPUP */
+
+

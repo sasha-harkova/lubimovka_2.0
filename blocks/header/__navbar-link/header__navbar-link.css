@@ -1,0 +1,14 @@
+.header__navbar-link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;  
+}
+
+@media screen and (max-width: 1279px) {
+  .header__navbar-link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

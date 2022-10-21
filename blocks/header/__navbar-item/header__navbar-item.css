@@ -1,0 +1,10 @@
+.header__navbar-item {
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__navbar-item {
+    padding: 0 5px 0 5px;
+  }
+}
