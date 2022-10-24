@@ -51,7 +51,37 @@
   <main class="content">
     <section class="else"></section>
     <section class="about"></section>
-    <section class="video"></section>
+    <section class="video">
+      <h2 class="section-title video__section-title">Заголовок блока с видео</h2>
+      <div class="video__one-video">
+        <div class="video__video-block">
+          <a class="video__link" href="https://www.youtube.com/watch?v=Msvr9vaWxDo">
+            <picture>
+              <source type="image/webp" srcset="https://i.ytimg.com/vi_webp/Msvr9vaWxDo/maxresdefault.webp">
+              <img class="video__media" src="https://i.ytimg.com/vi/Msvr9vaWxDo/maxresdefault.jpg" alt="">
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео"></button>
+        </div>
+        <p class="video__description">
+          Из этого следует два вывода: с одной стороны, искусство не должно быть равно реальности, потому что иначе оно не будет искусством, с другой стороны – оно должно быть все-таки подобно реальности, иначе мы ничего не поймем, не подключимся и не распознаем замыслы автора. Мне нравится такое определение, что один из видов эстетики – это, грубо говоря, "понимание" чего-то. Если нам нечего понимать, то мы не получим ни удовольствия, ни какого-то чувства, ничего. А для того, чтобы что-то понять, нам должно быть представлено что-то, что не равно само себе. То есть нам показывают или говорят что-то, а мы понимаем, что там есть что-то еще. Вот мы смотрим на античную статую и понимаем, что это – статуя, но похожа на человека. Если она будет абсолютно такая же как человек, как восковая фигура, то мы поймем, что это уже не искусство. Искусство для того, чтобы люди догадались, домыслили, дочувствовали что-то.
+        </p>
+      </div>
+      <h2 class="section-title video__section-title">Заголовок блока с двумя видео</h2>
+      <div class="video__multiple-videos">
+        <div class="video__slider-container">
+          <div id="two-videos" class="video__slider">
+          </div>
+        </div>
+      </div>
+      <h2 class="section-title video__section-title">Заголовок блока с тремя видео</h2>
+      <div class="video__multiple-videos">
+        <div class="video__slider-container">
+          <div id="multiple-videos" class="video__slider">
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="photo"></section>
     <section class="performances"></section>
     <section class="plays">
@@ -204,6 +234,21 @@
   <div class="burger-popup"></div>
   <div class="photo-popup"></div>
 
+  <!-- VIDEO SECTION SLIDE TEMPLATE -->
+  <template id="video__slide">
+    <div class="video__slide">
+      <div class="video__video-block">
+        <a class="video__link" href="https://www.youtube.com/watch?v=Msvr9vaWxDo">
+          <picture>
+            <source class="video__source" type="image/webp" srcset="https://i.ytimg.com/vi_webp/Msvr9vaWxDo/maxresdefault.webp">
+            <img class="video__media" src="https://i.ytimg.com/vi/Msvr9vaWxDo/maxresdefault.jpg" alt="">
+          </picture>
+        </a>
+        <button class="video__button" aria-label="Запустить видео"></button>
+      </div>
+    </div>
+  </template>
+
   <!-- PLAYS SECTION SLIDE TEMPLATE -->
   <template id="plays-slider">
     <div class="plays__slide">
@@ -247,6 +292,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./scripts/initial-cards.js"></script>
+  <script src="./scripts/initial-videos.js"></script>
 
   <script src="scripts/index.js"></script>
 </body>

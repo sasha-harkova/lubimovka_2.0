@@ -1,0 +1,13 @@
+.video__one-video {
+    max-width: 716px;
+    margin: 0 auto;
+    padding-bottom: 98px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .video__one-video {
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+}
