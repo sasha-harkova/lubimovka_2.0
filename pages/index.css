@@ -17,7 +17,6 @@
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_short/section-title_short.css);
 
-
 /* HEADER */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__navbar/header__navbar.css);
@@ -37,7 +36,6 @@
 @import url(../blocks/header/__projects-text/header__projects-text.css);
 @import url(../blocks/header/__projects-icon/header__projects-icon.css);
 
-
 /* ---------------------------------CONTENT ----------------------------------*/
 /* ELSE */
 @import url(../blocks/else/else.css);
@@ -48,6 +46,7 @@
 /* ABOUT */
 /* VIDEO */
 /* PHOTO */
+@import url(../blocks/photo/photo.css);
 /* PERFORMANCES */
 /* PLAYS */
 @import url(../blocks/plays/plays.css);
@@ -128,5 +127,3 @@
 @import url(../blocks/burger-popup/__navbar-link/burger-popup__navbar-link.css);
 
 /* PHOTO-POPUP */
-
-
