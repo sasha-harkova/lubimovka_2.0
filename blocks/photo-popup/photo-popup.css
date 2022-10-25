@@ -15,7 +15,7 @@
 }
 
 .photo-popup_opened {
-  display: block;
+  display: flex;
 }
 
 .photo-popup__container {

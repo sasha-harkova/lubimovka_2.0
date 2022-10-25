@@ -56,6 +56,7 @@ document.querySelectorAll('.photo__grid img').forEach((element, index) => {
 
 photoGrid.addEventListener('click', ({ target }) => {
   counter = Number(target.id.split('_')[1]);
+  carouselSlide.style.transition = "none";
   photosPopUp.classList.add('photo-popup_opened');
   imageSize = carouselImages[0].clientWidth;
   carouselSlide.style.transform = 'translateX(' + (-imageSize * counter) + 'px)';
