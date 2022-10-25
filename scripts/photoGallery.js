@@ -1,5 +1,7 @@
 'use strict';
 
+const photosPopUp = document.querySelector('.photo-popup');
+const photoGrid = document.querySelector('.photo__grid');
 const carouselSlide = document.querySelector('.photo-popup__slide');
 const carouselImages = document.querySelectorAll('.photo-popup__slide img')
 
@@ -9,7 +11,7 @@ const nextBtn = document.querySelector('.photo-popup__nextBtn');
 
 // counter 
 let counter = 1;
-const imageSize = carouselImages[0].clientWidth;
+let imageSize = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-imageSize * counter) + 'px)';
 
@@ -46,22 +48,21 @@ carouselSlide.addEventListener('transitionend', () => {
   }
 });
 
-// function setSwipe() {
-//   let touchstartX = 0
-//   let touchendX = 0
 
-//   function checkDirection() {
-//     if (touchendX < touchstartX) alert('swiped left!')
-//     if (touchendX > touchstartX) alert('swiped right!')
-//   }
+document.querySelectorAll('.photo__grid img').forEach((element, index) => {
+  element.id = `photo-popup_${index + 1}`;
+});
 
-//   document.addEventListener('touchstart', e => {
-//     touchstartX = e.changedTouches[0].screenX
-//   })
 
-//   document.addEventListener('touchend', e => {
-//     touchendX = e.changedTouches[0].screenX
-//     checkDirection()
-//   })
-// }
+photoGrid.addEventListener('click', ({ target }) => {
+  counter = Number(target.id.split('_')[1]);
+  photosPopUp.classList.add('photo-popup_opened');
+  imageSize = carouselImages[0].clientWidth;
+  carouselSlide.style.transform = 'translateX(' + (-imageSize * counter) + 'px)';
+})
 
+document.addEventListener('keydown', ({ key }) => {
+  if (key === "Escape") {
+    photosPopUp.classList.remove('photo-popup_opened')
+  }
+})

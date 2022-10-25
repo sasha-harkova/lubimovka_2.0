@@ -9,25 +9,14 @@
   align-items: center;
   top: 0;
   left: 0;
-}
-/* 
-.photo-popup__container {
-  width: 65vw;
-  margin: auto;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
+
+  /* display: block; */
+  display: none;
 }
 
-.photo-popup__slide {
-  display: flex;
-  width: 65vw;
-} */
-
-/* .photo-popup__slide img {
-  width: 65vw;
-  height: 65vh;
-} */
+.photo-popup_opened {
+  display: block;
+}
 
 .photo-popup__container {
   width: 65vw;
