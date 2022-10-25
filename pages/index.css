@@ -48,6 +48,7 @@
 /* PHOTO */
 @import url(../blocks/photo/photo.css);
 @import url(../blocks/photo/__grid/photo__grid.css);
+@import url(../blocks/photo-popup/photo-popup.css);
 /* PERFORMANCES */
 /* PLAYS */
 @import url(../blocks/plays/plays.css);
