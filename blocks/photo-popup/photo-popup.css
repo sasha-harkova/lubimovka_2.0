@@ -56,9 +56,17 @@
 }
 
 .photo-popup__close-button {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin-right: -55vw;
   margin-bottom: -7vh;
   z-index: 1;
+  background-image: url(../../images/icon_close-popup-icon.svg);
+  border: none;
+  border-radius: 50%;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px 20px;
 }
