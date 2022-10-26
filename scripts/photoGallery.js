@@ -67,3 +67,7 @@ document.addEventListener('keydown', ({ key }) => {
     photosPopUp.classList.remove('photo-popup_opened')
   }
 })
+
+document.querySelector('.photo-popup__close-button').addEventListener('click', () => {
+  photosPopUp.classList.remove('photo-popup_opened')
+})
