@@ -31,10 +31,10 @@
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 602px) {
   .else__title {
   max-width: 100%;
-  margin: 0 0 22px 24px;
+  margin: 0 0 25px 24px;
   font-size: 40px;
   line-height: 40px;
   }

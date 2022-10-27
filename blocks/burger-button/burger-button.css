@@ -5,15 +5,16 @@
   border: none;
   position: fixed;
   right: 0;
-  bottom: 128px;
+  top: 40px;
   background: #242424  no-repeat center;
   background-image: url(../../images/icon_burger_menu.svg);
   background-size: 20px 12px;
   cursor: pointer;
   display: none;
   z-index: 11;
-  transition: background-image .2s linear;
-  transition: background-size .2s linear;
+  transition-property: background-image, background-size;
+  transition-timing-function: linear;
+  transition-duration: .2s, .2s;
 }
 
 @media screen and (max-width: 767px) {

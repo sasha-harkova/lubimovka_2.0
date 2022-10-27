@@ -1,0 +1,12 @@
+.poster__authors {
+  margin: 20px 0;
+  padding-left: 30px;
+  grid-area: authors;
+}
+
+@media screen and (max-width: 767px) {
+  .poster__authors {
+    margin: 8px 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.poster_for-single {
+  margin: 3px 0 0 110px;
+}
+
+@media screen and (max-width: 1279px) {
+  .poster_for-single {
+    margin-left: 60px;
+  }
+}

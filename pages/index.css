@@ -17,6 +17,7 @@
 /* section-title */
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_short/section-title_short.css);
+@import url(../blocks/section-title/_middle/section-title_middle.css);
 
 /* HEADER */
 @import url(../blocks/header/header.css);
@@ -36,6 +37,9 @@
 @import url(../blocks/header/__projects-link/header__projects-link.css);
 @import url(../blocks/header/__projects-text/header__projects-text.css);
 @import url(../blocks/header/__projects-icon/header__projects-icon.css);
+@import url(../blocks/burger-button/burger-button.css);
+@import url(../blocks/burger-button/_active/burger-button_active.css);
+
 
 /* ---------------------------------CONTENT ----------------------------------*/
 /* ELSE */
@@ -45,6 +49,9 @@
 @import url(../blocks/else/__text/else__text.css);
 @import url(../blocks/else/__image/else__image.css);
 /* ABOUT */
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/__text/about__text.css);
 /* VIDEO */
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__slider-container/video__slider-container.css);
@@ -64,6 +71,32 @@
 @import url(../blocks/photo/__grid/photo__grid.css);
 @import url(../blocks/photo-popup/photo-popup.css);
 /* PERFORMANCES */
+@import url(../blocks/performances/performances.css);
+@import url(../blocks/performances/__container/_for-single/performances__container_for-single.css);
+@import url(../blocks/performances/__container/_mob/performances__container_mob.css);
+@import url(../blocks/performances/__title/performances__title.css);
+@import url(../blocks/performances/__title/_mob/performances__title_mob.css);
+@import url(../blocks/performances/__title/_for-single/performances__title_for-single.css);
+@import url(../blocks/performances/__title/_for-double/performances__title_for-double.css);
+@import url(../blocks/performances/__posters/perfomances__posters.css);
+@import url(../blocks/performances/__posters/_for-double/perfomances__posters_for-double.css);
+@import url(../blocks/poster-border/poster-border.css);
+@import url(../blocks/poster-border/_for-single/poster-border_for-single.css);
+@import url(../blocks/poster/poster.css);
+@import url(../blocks/poster/_for-double/poster_for-double.css);
+@import url(../blocks/poster/_for-single/poster_for-single.css);
+@import url(../blocks/poster/__image/poster__image.css);
+@import url(../blocks/poster/__dates/poster__dates.css);
+@import url(../blocks/poster/__date/poster__date.css);
+@import url(../blocks/poster/__time/poster__time.css);
+@import url(../blocks/poster/__title/poster__title.css);
+@import url(../blocks/poster/__authors/poster__authors.css);
+@import url(../blocks/poster/__author/poster__author.css);
+@import url(../blocks/poster/__about/poster__about.css);
+@import url(../blocks/poster/__buttons/poster__buttons.css);
+@import url(../blocks/poster/__button/poster__button.css);
+@import url(../blocks/poster/__button-img/poster__button-img.css);
+
 /* PLAYS */
 @import url(../blocks/plays/plays.css);
 @import url(../blocks/plays/__cards/plays__cards.css);
@@ -134,8 +167,6 @@
 @import url(../blocks/footer/__developers-text/footer__developers-text.css);
 
 /* BURGER-POPUP */
-@import url(../blocks/burger-button/burger-button.css);
-@import url(../blocks/burger-button/_active/burger-button_active.css);
 @import url(../blocks/burger-popup/burger-popup.css);
 @import url(../blocks/burger-popup/_opened/burger-popup_opened.css);
 @import url(../blocks/burger-popup/__logo/burger-popup__logo.css);

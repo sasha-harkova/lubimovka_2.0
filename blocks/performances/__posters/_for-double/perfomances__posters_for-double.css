@@ -1,0 +1,9 @@
+.perfomances__posters_for-double {
+  margin-left: 12.5%;
+}
+
+@media screen and (max-width: 1279px) {
+  .perfomances__posters_for-double {
+    margin-left: 0;
+  }
+}
