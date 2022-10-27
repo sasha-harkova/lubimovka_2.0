@@ -13,11 +13,11 @@
 @import url(../blocks/link-button/__img/link-button__img.css);
 @import url(../blocks/link-button/__img/_direction/link-button__img_direction_up-right.css);
 @import url(../blocks/link-button/__img/_direction/link-button__img_direction_down.css);
-@import url(../blocks/link-button/__img/_direction/link-button__img_direction_right.css);
 /* section-title */
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_short/section-title_short.css);
 @import url(../blocks/section-title/_middle/section-title_middle.css);
+
 
 /* HEADER */
 @import url(../blocks/header/header.css);
@@ -37,6 +37,8 @@
 @import url(../blocks/header/__projects-link/header__projects-link.css);
 @import url(../blocks/header/__projects-text/header__projects-text.css);
 @import url(../blocks/header/__projects-icon/header__projects-icon.css);
+@import url(../blocks/burger-button/burger-button.css);
+@import url(../blocks/burger-button/_active/burger-button_active.css);
 
 /* ---------------------------------CONTENT ----------------------------------*/
 /* ELSE */
@@ -146,8 +148,6 @@
 @import url(../blocks/footer/__developers-text/footer__developers-text.css);
 
 /* BURGER-POPUP */
-@import url(../blocks/burger-button/burger-button.css);
-@import url(../blocks/burger-button/_active/burger-button_active.css);
 @import url(../blocks/burger-popup/burger-popup.css);
 @import url(../blocks/burger-popup/_opened/burger-popup_opened.css);
 @import url(../blocks/burger-popup/__logo/burger-popup__logo.css);
@@ -159,177 +159,3 @@
 /* PHOTO-POPUP */
 
 
-/* .poster {
-  max-width: 420px;
-  margin: 0 30px;
-  display: grid;
-  grid-template-areas:
-    "image date"
-    "image title"
-    "image authors"
-    "image about"
-    ". buttons";
-}
-
-@media screen and (max-width: 944px) {
-  .poster {
-    margin: 30px 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .poster {
-    margin: 30px 0 30px 24px;
-    grid-template-areas:
-      "image date"
-      "image title"
-      "image authors"
-      "image about"
-      "buttons buttons";
-  }
-}
-
-.poster_for-double {
-  margin: 0 60px;
-}
-
-@media screen and (max-width: 1279px) {
-  .poster_for-double {
-    margin: 0 30px;
-  }
-}
-
-.poster_for-single {
-  margin: 3px 0 0 110px;
-}
-
-@media screen and (max-width: 1279px) {
-  .poster_for-single {
-    margin-left: 60px;
-  }
-}
-
-.poster__image {
-  width: 120px;
-  height: 160px;
-  padding-right: 32px;
-  object-fit: cover;
-  grid-area: image;
-}
-
-@media screen and (max-width: 767px) {
-  .poster__image {
-    width: 92px;
-    height: 123px;
-    padding-right: 5px;
-  }
-}
-
-.poster__dates {
-  display: flex;
-  grid-area: date;
-}
-
-.poster__date {
-  margin: 0;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.01em;
-  font-feature-settings: "ss01" on;
-}
-
-.poster__time {
-  margin: 0 0 0 40px;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.01em;
-  font-feature-settings: "ss01" on;
-}
-
-.poster__title {
-  margin: 0;
-  max-width: 170px;
-  font-family: "Neue Machina", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 38px;
-  letter-spacing: -0.01em;
-  grid-area: title;
-}
-
-@media screen and (max-width: 767px) {
-  .poster__title {
-    margin-top: 15px;
-    font-size: 28px;
-    line-height: 32px;
-  }
-}
-
-.poster__authors {
-  margin: 20px 0;
-  padding-left: 30px;
-  grid-area: authors;
-}
-
-@media screen and (max-width: 767px) {
-  .poster__authors {
-    margin: 8px 0;
-    padding-left: 0;
-  }
-}
-
-.poster__author {
-  margin: 0;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.poster__about {
-  max-width: 150px;
-  margin: 0;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  grid-area: about;
-}
-
-.poster__buttons {
-  grid-area: buttons;
-}
-
-@media screen and (max-width: 767px) {
-  .poster__buttons {
-    margin-top: 27px;
-    display: flex;
-  }
-}
-
-.poster__button {
-  width: 150px;
-  height: auto;
-  padding: 5px 0 5px 0;
-  margin-top: 15px;
-  border-top: none;
-  border-right: none;
-  border-left: 1px solid #242424;
-  border-bottom: 1px solid #242424;
-  justify-content: flex-start;
-}
-
-@media screen and (max-width: 767px) {
-  .poster__button:first-of-type {
-    margin-right: 30px;
-  }
-}
-
-.poster__button-img {
-  margin-right: 8px;
-}
-
-
-.poster-border_for-single {
-  margin-top: 0;
-} */
