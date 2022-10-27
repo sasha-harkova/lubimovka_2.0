@@ -13,11 +13,11 @@
 @import url(../blocks/link-button/__img/link-button__img.css);
 @import url(../blocks/link-button/__img/_direction/link-button__img_direction_up-right.css);
 @import url(../blocks/link-button/__img/_direction/link-button__img_direction_down.css);
+@import url(../blocks/link-button/__img/_direction/link-button__img_direction_right.css);
 /* section-title */
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_short/section-title_short.css);
 @import url(../blocks/section-title/_middle/section-title_middle.css);
-
 
 /* HEADER */
 @import url(../blocks/header/header.css);
@@ -40,6 +40,7 @@
 @import url(../blocks/burger-button/burger-button.css);
 @import url(../blocks/burger-button/_active/burger-button_active.css);
 
+
 /* ---------------------------------CONTENT ----------------------------------*/
 /* ELSE */
 @import url(../blocks/else/else.css);
@@ -52,7 +53,23 @@
 @import url(../blocks/about/__title/about__title.css);
 @import url(../blocks/about/__text/about__text.css);
 /* VIDEO */
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__slider-container/video__slider-container.css);
+@import url(../blocks/video/__slider/video__slider.css);
+@import url(../blocks/video/__slide/video__slide.css);
+@import url(../blocks/video/__one-video/video__one-video.css);
+@import url(../blocks/video/__section-title/video__section-title.css);
+@import url(../blocks/video/__video-block/video__video-block.css);
+@import url(../blocks/video/__media/video__media.css);
+@import url(../blocks/video/__button/video__button.css);
+@import url(../blocks/video/__button/_enabled/video__button_enabled.css);
+@import url(../blocks/video/__description/video__description.css);
+@import url(../blocks/video/__multiple-videos/video__multiple-videos.css);
+
 /* PHOTO */
+@import url(../blocks/photo/photo.css);
+@import url(../blocks/photo/__grid/photo__grid.css);
+@import url(../blocks/photo-popup/photo-popup.css);
 /* PERFORMANCES */
 @import url(../blocks/performances/performances.css);
 @import url(../blocks/performances/__container/_for-single/performances__container_for-single.css);
@@ -135,9 +152,11 @@
 @import url(../blocks/footer/__partners/footer__partners.css);
 @import url(../blocks/footer/__partners-caption/footer__partners-caption.css);
 @import url(../blocks/footer/__partners-list/footer__partners-list.css);
+@import url(../blocks/footer/__partner-link/footer__partner-link.css);
 @import url(../blocks/footer/__partner-logo/footer__partner-logo.css);
 @import url(../blocks/footer/__partner-caption/footer__partner-caption.css);
 @import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__info-link/footer__info-link.css);
 @import url(../blocks/footer/__terms/footer__terms.css);
 @import url(../blocks/footer/__terms-copyright/footer__terms-copyright.css);
 @import url(../blocks/footer/__authors/footer__authors.css);
@@ -157,5 +176,3 @@
 @import url(../blocks/burger-popup/__navbar-link/burger-popup__navbar-link.css);
 
 /* PHOTO-POPUP */
-
-

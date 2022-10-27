@@ -4,3 +4,21 @@
   padding: 28px 0 0 8px;
   grid-area: footer__info;
 }
+
+@media screen and (max-width: 1023px) {
+  .footer__info {
+    padding: 32px 0 0;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .footer__info {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer__info {
+    padding: 32px 0 74px 27px;
+  }
+}

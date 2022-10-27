@@ -1,3 +1,17 @@
+//Parameters of VIDEO-section
+const videoSwiper = new Swiper('.video__slider-container', {
+  wrapperClass: 'video__slider',
+  slideClass: 'video__slide',
+  slidesPerView: 'auto',
+  speed: 1000,
+  slideToClickedSlide: true,
+  keyboard: true,
+});
+
+const videoSlideItem = document.querySelector('#video__slide');
+const twoVideosBlock = document.querySelector('#two-videos');
+const multipleVideosBlock = document.querySelector('#multiple-videos');
+
 // Parameters of PLAYS-section slider
 const playsSwiper = new Swiper('.plays__cards', {
   wrapperClass: 'plays__wrapper',
@@ -19,6 +33,86 @@ const personsSwiper = new Swiper('.persons__cards', {
   slideToClickedSlide: true,
   keyboard: true,
 });
+
+// VIDEO-SECTION functions
+// Function: get the video id from url
+function generateURL(id) {
+  let query = '?rel=0&showinfo=0&autoplay=1';
+
+  return 'https://www.youtube.com/embed/' + id + query;
+}
+
+// Function: create iframe for the video
+function createIframe(id) {
+  let iframe = document.createElement('iframe');
+
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('src', generateURL(id));
+  iframe.classList.add('video__media');
+
+  return iframe;
+}
+
+// Function: parse youtube media id
+function parseMediaURL(media) {
+  let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+  let url = media.src;
+  let match = url.match(regexp);
+
+  return match[1];
+}
+
+// Function: append iframe and button
+function setupVideo (video) {
+  const link = video.querySelector('.video__link');
+  const media = video.querySelector('.video__media');
+  const button = video.querySelector('.video__button');
+  const id = parseMediaURL(media);
+
+  video.addEventListener ('click', () => {
+    const iframe = createIframe(id);
+    link.remove();
+    button.remove();
+    video.appendChild(iframe);
+  });
+
+  link.removeAttribute('href');
+  button.classList.add('video__button_enabled');
+}
+
+// Function: find all the videos
+function findVideos() {
+  let videos = document.querySelectorAll('.video__video-block');
+
+  for (let i = 0; i < videos.length; i++) {
+    setupVideo(videos[i]);
+  }
+}
+
+// VIDEO-section function: append new video to slider
+function createVideoBlock (url) {
+  const videoSlide = videoSlideItem.content.cloneNode(true);
+  const link = videoSlide.querySelector('.video__link');
+  const source = videoSlide.querySelector('.video__source');
+  const image = videoSlide.querySelector('.video__media');
+
+  const regexp = /https:\/\/www\.youtube\.com\/watch\?v\=([a-zA-Z0-9_-]+)/i;
+  const match = url.match(regexp);
+  const id = match[1];
+
+  link.href = url;
+  source.srcset = 'https://i.ytimg.com/vi_webp/' + id + '/maxresdefault.webp';
+  image.src = 'https://i.ytimg.com/vi/' + id + '/maxresdefault.jpg';
+
+  return videoSlide;
+}
+
+function appendVideo (block, videoLinks) {
+  for (let i=0; i < videoLinks.length; i++) {
+    block.append(createVideoBlock(videoLinks[i]));
+  }
+}
 
 // Creation of PLAYS-section card from a template
 function createPlayCard(cardData) {
@@ -67,8 +161,6 @@ function loadInitialCards(cards, createFunction, swiper) {
 loadInitialCards(playsInitialCards, createPlayCard, playsSwiper);
 loadInitialCards(personsInitialCards, createPersonCard, personsSwiper);
 
-
-
 //открытие попапа бургерного меню
 
 const burgerPopup = document.querySelector('.burger-popup');
@@ -80,7 +172,6 @@ function toggleBurgerMenu() {
 }
 
 burgerButton.addEventListener('click', toggleBurgerMenu);
-
 
 //добавление афиш
 
@@ -126,3 +217,9 @@ function addPostersToBlockOnePoster() {
 addPostersToBlock(threePosters, blockThreePosters);
 addPostersToBlockTwoPosters()
 addPostersToBlockOnePoster()
+
+//
+appendVideo(twoVideosBlock, twoVideosInitialSlides);
+appendVideo(multipleVideosBlock, multipleVideosInitialSlides);
+findVideos();
+

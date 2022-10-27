@@ -13,17 +13,19 @@
 </head>
 
 <body>
-  <header class="header">      
+  <header class="header">
     <nav class="header__navbar">
-      <img class="header__logo" src="./images/lubimovka_logo.svg" alt="Логотип проекта Любимовка">               
+      <img class="header__logo" src="./images/lubimovka_logo.svg" alt="Логотип проекта Любимовка">
       <ul class="header__section header__section_menu header__list">
         <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">Афиша</a></li>
-        <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">Библиотека</a></li>
+        <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">Библиотека</a>
+        </li>
         <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">Проекты</a></li>
         <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">История</a></li>
         <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">Блог</a></li>
         <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">Новости</a></li>
-        <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">О фестивале</a></li>
+        <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">О фестивале</a>
+        </li>
         <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">Контакты</a></li>
       </ul>
       <ul class="header__section header__section_links header__list">
@@ -52,7 +54,7 @@
     <section class="else">
       <h1 class="else__title">Любимовка. Ещё</h1>
       <div class="else__container">
-        <p class="else__text">Межсезонные читки и обсуждение пьес из списка отмеченных отборщиками Любимовки. 
+        <p class="else__text">Межсезонные читки и обсуждение пьес из списка отмеченных отборщиками Любимовки.
           Можно слушать, обсуждать и даже участвовать.</p>
         <img class="else__image" src="./images/else_photo.png">
       </div>
@@ -62,8 +64,58 @@
       <p class="about__text">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: 
         Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
     </section>
-    <section class="video"></section>
-    <section class="photo"></section>
+    <section class="video">
+      <h2 class="section-title video__section-title">Заголовок блока с видео</h2>
+      <div class="video__one-video">
+        <div class="video__video-block">
+          <a class="video__link" href="https://www.youtube.com/watch?v=Msvr9vaWxDo">
+            <picture>
+              <source type="image/webp" srcset="https://i.ytimg.com/vi_webp/Msvr9vaWxDo/maxresdefault.webp">
+              <img class="video__media" src="https://i.ytimg.com/vi/Msvr9vaWxDo/maxresdefault.jpg" alt="">
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео"></button>
+        </div>
+        <p class="video__description">
+          Из этого следует два вывода: с одной стороны, искусство не должно быть равно реальности, потому что иначе оно
+          не будет искусством, с другой стороны – оно должно быть все-таки подобно реальности, иначе мы ничего не
+          поймем, не подключимся и не распознаем замыслы автора. Мне нравится такое определение, что один из видов
+          эстетики – это, грубо говоря, "понимание" чего-то. Если нам нечего понимать, то мы не получим ни удовольствия,
+          ни какого-то чувства, ничего. А для того, чтобы что-то понять, нам должно быть представлено что-то, что не
+          равно само себе. То есть нам показывают или говорят что-то, а мы понимаем, что там есть что-то еще. Вот мы
+          смотрим на античную статую и понимаем, что это – статуя, но похожа на человека. Если она будет абсолютно такая
+          же как человек, как восковая фигура, то мы поймем, что это уже не искусство. Искусство для того, чтобы люди
+          догадались, домыслили, дочувствовали что-то.
+        </p>
+      </div>
+      <h2 class="section-title video__section-title">Заголовок блока с двумя видео</h2>
+      <div class="video__multiple-videos">
+        <div class="video__slider-container">
+          <div id="two-videos" class="video__slider">
+          </div>
+        </div>
+      </div>
+      <h2 class="section-title video__section-title">Заголовок блока с тремя видео</h2>
+      <div class="video__multiple-videos">
+        <div class="video__slider-container">
+          <div id="multiple-videos" class="video__slider">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="photo">
+      <h2 class="section-title">Заголовок блока с фотографиями</h2>
+      <div class="photo__grid">
+        <img src="./images/photo_grid_1.jpg" alt="" class="photo__item">
+        <img src="./images/photo_grid_2.jpg" alt="" class="photo__item">
+        <img src="./images/photo_grid_3.jpg" alt="" class="photo__item">
+        <img src="./images/photo_grid_4.jpg" alt="" class="photo__item">
+        <img src="./images/photo_grid_5.jpg" alt="" class="photo__item">
+        <img src="./images/photo_grid_6.jpg" alt="" class="photo__item">
+        <img src="./images/photo_grid_7.jpg" alt="" class="photo__item">
+        <img src="./images/photo_grid_8.jpg" alt="" class="photo__item">
+      </div>
+    </section>
     <section class="performances">
       <div class="performances__container">
         <h2 class="section-title section-title_short performances__title">Заголовок блока с тремя и более спектаклями</h2>
@@ -91,16 +143,17 @@
         <div class="persons__wrapper"></div>
       </div>
     </section>
-    <!-- <section class="block-with-button">
+    <section class="block-with-button">
       <div class="block-with-button__text">
         <h2 class="block-with-button__title">Заголовок блока с&nbsp;кнопкой/ссылкой</h2>
         <p class="block-with-button__paragraph">Видео прошедших мероприятий можно посмотреть в&nbsp;плейлисте
-          на&nbsp;канале Любимовки в&nbsp;YouTube</p>
+          на канале Любимовки в&nbsp;YouTube</p>
       </div>
-      <a class="pseudo-button block-with-button__link"
-        href="https://www.youtube.com/channel/UCDZ1HTzBVBxm_vw6tV7C3lg">YOUTUBE<img
-          class="pseudo-button__arrow block-with-button__arrow" src="./images/icon_arrow.svg"
-          alt="Перейти на YouTube"></a>
+      <a class="link-button block-with-button__link" href="https://www.youtube.com/channel/UCDZ1HTzBVBxm_vw6tV7C3lg">
+        <span class="link-button__text">YOUTUBE</span>
+        <img class=" link-button__img link-button__img_direction_right" src="./images/icon_arrow.svg"
+          alt="Перейти на YouTube">
+      </a>
     </section>
     <section class="cooperation">
       <img class="cooperation__asterisk" src="./images/icon_asterisk.svg">
@@ -108,9 +161,9 @@
       <p class="cooperation__paragraph">Мы&nbsp;находимся в&nbsp;постоянном поиске режиссёров и&nbsp;актеров,
         заинтересованных в&nbsp;постановке читок.</p>
       <p class="cooperation__paragraph">Пишите на&nbsp;<a class="cooperation__link" href="#">more@lubimovka.ru</a></p>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <img src="./images/lubimovka_logo_footer.svg" alt="Логотип `Любимовка`" class="footer__logo">
     <div class="footer__address">
       <p class="footer__address-place">Площадка &laquo;8/3&raquo;</p>
@@ -210,45 +263,99 @@
     <div class="footer__info">
       <div class="footer__terms">
         <p class="footer__terms-copyright">&copy;&nbsp;Любимовка, 2021</p>
-        <a class="footer__terms-privacy footer__link" href="https://disk.yandex.ru/i/58bHCVcPk8dIgQ"
+        <a class="footer__link footer__info-link footer__terms-privacy" href="https://disk.yandex.ru/i/58bHCVcPk8dIgQ"
           target="_blank">Политика конфиденциальности</a>
       </div>
       <div class="footer__authors">
         <div class="footer__designers">
           <img src="./images/shishki_logo.svg" alt="Логотип `Shishki collective`" class="footer__designers-logo">
-          <p class="footer__designers-text">дизайн сайта&nbsp;&mdash; <a class="footer__designers-link footer__link"
-              href="" target="_blank">shishki.collective</a></p>
+          <p class="footer__designers-text">дизайн сайта&nbsp;&mdash; <a
+              class="footer__link footer__info-link footer__designers-link" href=""
+              target="_blank">shishki.collective</a></p>
         </div>
         <div class="footer__developers">
           <p class="footer__developers-text">вёрстка&nbsp;и&nbsp;разработка&nbsp;&mdash; студенты <a
-              class="footer__developers-link footer__link" href="https://practicum.yandex.ru">Яндекс.Практикума</a></p>
+              class="footer__link footer__info-link footer__developers-link"
+              href="https://practicum.yandex.ru">Яндекс.Практикума</a></p>
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
+
+  <!-- PHOTO POPUP -->
+  <div class="photo-popup">
+    <button aria-label="закрыть" class="photo-popup__close-button" type="button"></button>
+    <div class="photo-popup__container">
+      <div class="photo-popup__slide">
+        <img src="./images/photo-popup8.jpg" class="photo-popup__last-slide-clone" alt="">
+        <img src="./images/photo-popup1.jpg" alt="">
+        <img src="./images/photo-popup2.jpg" alt="">
+        <img src="./images/photo-popup3.jpg" alt="">
+        <img src="./images/photo-popup4.jpg" alt="">
+        <img src="./images/photo-popup5.jpg" alt="">
+        <img src="./images/photo-popup6.jpg" alt="">
+        <img src="./images/photo-popup7.jpg" alt="">
+        <img src="./images/photo-popup8.jpg" alt="">
+        <img src="./images/photo-popup1.jpg" class="photo-popup__first-slide-clone" alt="">
+      </div>
+      <button aria-label="назад" class="photo-popup__button photo-popup__prevBtn" type="button"></button>
+      <button aria-label="вперед" class="photo-popup__button photo-popup__nextBtn" type="button"></button>
+    </div>
+  </div>
+
+  <!-- BURGER POPUP -->
+>>>>>>> develop
   <div class="burger-popup">
     <img class="burger-popup__logo" src="./images/lubimovka_logo.svg" alt="Логотип проекта Любимовка">
     <nav>
       <ul class="burger-popup__section burger-popup__section_menu">
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">Афиша</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">Библиотека</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">Проекты</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">История</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">Блог</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">Новости</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">О фестивале</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">Контакты</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">Афиша</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">Библиотека</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">Проекты</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">История</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">Блог</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">Новости</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">О
+            фестивале</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">Контакты</a></li>
       </ul>
       <ul class="burger-popup__section burger-popup__section_links">
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">fb</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">inst</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">ytube</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">tlgrm</a></li>
-        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">vk</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">fb</a>
+        </li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">inst</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">ytube</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link"
+            href="#">tlgrm</a></li>
+        <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" href="#">vk</a>
+        </li>
       </ul>
-    </nav>    
+    </nav>
   </div>
-  <div class="photo-popup"></div>
+
+  <!-- VIDEO SECTION SLIDE TEMPLATE -->
+  <template id="video__slide">
+    <div class="video__slide">
+      <div class="video__video-block">
+        <a class="video__link" href="https://www.youtube.com/watch?v=Msvr9vaWxDo">
+          <picture>
+            <source class="video__source" type="image/webp"
+              srcset="https://i.ytimg.com/vi_webp/Msvr9vaWxDo/maxresdefault.webp">
+            <img class="video__media" src="https://i.ytimg.com/vi/Msvr9vaWxDo/maxresdefault.jpg" alt="">
+          </picture>
+        </a>
+        <button class="video__button" aria-label="Запустить видео"></button>
+      </div>
+    </div>
+  </template>
 
   <!-- PLAYS SECTION SLIDE TEMPLATE -->
   <template id="plays-slider">
@@ -323,7 +430,9 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./scripts/initial-cards.js"></script>
   <script src="./scripts/posters.js"></script>
+  <script src="./scripts/initial-videos.js"></script>
+  <script src="./scripts/photoGallery.js"></script>
   <script src="scripts/index.js"></script>
-</body>
 
+</body>
 </html>
