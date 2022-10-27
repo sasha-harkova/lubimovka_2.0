@@ -1,0 +1,72 @@
+.photo-popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.photo-popup_opened {
+  display: flex;
+}
+
+.photo-popup__container {
+  width: 65vw;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 936px;
+}
+
+.photo-popup__slide {
+  display: flex;
+  position: relative;
+}
+
+.photo-popup__slide img {
+  width: 100%;
+}
+
+.photo-popup__button {
+  position: absolute;
+  top: 50vh;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../images/icon_slider_arrow.svg);
+  border: none;
+  border-radius: 50%;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.photo-popup__nextBtn {
+  right: 10vw;
+  transform: rotate(180deg);
+}
+
+.photo-popup__prevBtn {
+  left: 10vw;
+}
+
+.photo-popup__close-button {
+  width: 50px;
+  height: 50px;
+  margin-right: -55vw;
+  margin-bottom: -7vh;
+  z-index: 1;
+  background-image: url(../../images/icon_close-popup-icon.svg);
+  border: none;
+  border-radius: 50%;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px 20px;
+}
