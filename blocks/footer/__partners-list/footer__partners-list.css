@@ -5,3 +5,14 @@
   display: flex;
   gap: 31px;
 }
+
+@media screen and (max-width: 767px) {
+  .footer__partners-list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}

@@ -2,3 +2,10 @@
   display: flex;
   gap: 32px;
 }
+
+@media screen and (max-width: 885px) {
+  .footer__terms {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

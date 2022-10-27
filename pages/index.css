@@ -13,6 +13,7 @@
 @import url(../blocks/link-button/__img/link-button__img.css);
 @import url(../blocks/link-button/__img/_direction/link-button__img_direction_up-right.css);
 @import url(../blocks/link-button/__img/_direction/link-button__img_direction_down.css);
+@import url(../blocks/link-button/__img/_direction/link-button__img_direction_right.css);
 /* section-title */
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_short/section-title_short.css);
@@ -104,9 +105,11 @@
 @import url(../blocks/footer/__partners/footer__partners.css);
 @import url(../blocks/footer/__partners-caption/footer__partners-caption.css);
 @import url(../blocks/footer/__partners-list/footer__partners-list.css);
+@import url(../blocks/footer/__partner-link/footer__partner-link.css);
 @import url(../blocks/footer/__partner-logo/footer__partner-logo.css);
 @import url(../blocks/footer/__partner-caption/footer__partner-caption.css);
 @import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__info-link/footer__info-link.css);
 @import url(../blocks/footer/__terms/footer__terms.css);
 @import url(../blocks/footer/__terms-copyright/footer__terms-copyright.css);
 @import url(../blocks/footer/__authors/footer__authors.css);

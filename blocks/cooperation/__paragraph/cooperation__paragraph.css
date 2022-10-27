@@ -4,11 +4,23 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  margin: 0;
-  padding: 24px 0 0 58px;
+  margin: 24px 0 0 58px;
+  padding: 0;
   max-width: 468px;
+  width: 100%;
 }
 
 .cooperation__paragraph:first-of-type {
-  padding-top: 33px;
+  margin-top: 33px;
+}
+
+@media screen and (max-width: 767px) {
+  .cooperation__paragraph {
+    margin: 24px 0 0 0;
+    max-width: 333px;
+  }
+
+  .cooperation__paragraph:first-of-type {
+    margin-top: 16px;
+  }
 }

@@ -7,3 +7,15 @@
 .footer__links-list:first-of-type {
   margin: 0;
 }
+
+@media screen and (max-width: 444px) {
+  .footer__links-list {
+    margin: 0 0 0 48px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__links-list {
+    margin: 0 0 0 30px;
+  }
+}

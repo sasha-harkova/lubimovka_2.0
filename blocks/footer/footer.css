@@ -1,8 +1,7 @@
 .footer {
-  max-width: 1316px;
   width: 100%;
   margin: 0;
-  padding: 42px 92px 56px 32px;
+  padding: 42px 6.39% 56px 2.22%;
   font-family: 'Formular', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 1.21;
@@ -10,9 +9,39 @@
   display: grid;
   grid-template-columns: 93px auto 279px 212px;
   grid-template-rows: 80px auto auto;
-  gap: 23px 77px;
+  gap: 23px 5.34%;
   grid-template-areas: 
     "footer__logo footer__partners footer__partners footer__partners"
     ". footer__address footer__links footer__links-allprojects"
     ". footer__info footer__info footer__info";
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    padding: 42px 70px 56px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas: 
+    "footer__logo footer__address"
+    "footer__links footer__links-allprojects"
+    "footer__partners footer__partners"
+    "footer__info footer__info";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 1020px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer {
+    padding: 55px 0 0;
+  }
 }

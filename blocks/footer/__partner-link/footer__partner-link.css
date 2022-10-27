@@ -1,0 +1,11 @@
+.footer__partner-link {
+
+}
+
+@media screen and (max-width: 767px) {
+  .footer__partner-link {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+  }
+}
