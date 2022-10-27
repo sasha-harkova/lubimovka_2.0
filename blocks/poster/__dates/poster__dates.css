@@ -1,0 +1,4 @@
+.poster__dates {
+  display: flex;
+  grid-area: date;
+}

@@ -1,0 +1,16 @@
+.performances__title_mob {
+  display: none;
+}
+
+@media screen and (max-width: 944px) {
+  .performances__title_mob {
+    margin-bottom: 30px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .performances__title_mob {
+    margin: 98px 0 4px 24px;
+  }
+}

@@ -57,10 +57,28 @@
         <img class="else__image" src="./images/else_photo.png">
       </div>
     </section>
-    <section class="about"></section>
+    <section class="about">
+      <h2 class="section-title about__title">О проекте</h2>
+      <p class="about__text">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: 
+        Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
+    </section>
     <section class="video"></section>
     <section class="photo"></section>
-    <section class="performances"></section>
+    <section class="performances">
+      <div class="performances__container">
+        <h2 class="section-title section-title_short performances__title">Заголовок блока с тремя и более спектаклями</h2>
+        <h2 class="section-title section-title_short performances__title performances__title_mob">Заголовок блока со спектаклями любое количество</h2>
+        <div class="perfomances__posters" id="three-posters"></div>        
+      </div>
+      <div class="performances__container performances__container_mob">
+        <h2 class="section-title section-title_middle performances__title performances__title_for-double">Заголовок блока с двумя спектаклями</h2>
+        <div class="perfomances__posters perfomances__posters_for-double" id="two-posters"></div>        
+      </div>
+      <div class="performances__container performances__container_for-single performances__container_mob ">
+        <h2 class="section-title section-title_middle performances__title performances__title_for-single">Заголовок блока с одним спектаклем</h2>
+        <div class="perfomances__posters" id="one-poster"></div>
+      </div>
+    </section> 
     <section class="plays">
       <h2 class="section-title section-title_short">Заголовок блока с пьесами</h2>
       <div class="plays__cards">
@@ -73,7 +91,7 @@
         <div class="persons__wrapper"></div>
       </div>
     </section>
-    <section class="block-with-button">
+    <!-- <section class="block-with-button">
       <div class="block-with-button__text">
         <h2 class="block-with-button__title">Заголовок блока с&nbsp;кнопкой/ссылкой</h2>
         <p class="block-with-button__paragraph">Видео прошедших мероприятий можно посмотреть в&nbsp;плейлисте
@@ -90,9 +108,9 @@
       <p class="cooperation__paragraph">Мы&nbsp;находимся в&nbsp;постоянном поиске режиссёров и&nbsp;актеров,
         заинтересованных в&nbsp;постановке читок.</p>
       <p class="cooperation__paragraph">Пишите на&nbsp;<a class="cooperation__link" href="#">more@lubimovka.ru</a></p>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <img src="./images/lubimovka_logo_footer.svg" alt="Логотип `Любимовка`" class="footer__logo">
     <div class="footer__address">
       <p class="footer__address-place">Площадка &laquo;8/3&raquo;</p>
@@ -207,7 +225,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div class="burger-popup">
     <img class="burger-popup__logo" src="./images/lubimovka_logo.svg" alt="Логотип проекта Любимовка">
     <nav>
@@ -273,9 +291,38 @@
     </div>
   </template>
 
+  <!-- PERFOMANCE POSTER TEMPLATE -->
+  <template id="poster">
+    <div class="poster-border">
+      <div class="poster">
+        <img class="poster__image" alt="" src="./images/poster__mama.jpg">
+        <div class="poster__dates">
+          <p class="poster__date">15 декабря</p>
+          <p class="poster__time">11:00</p>
+        </div>        
+        <p class="poster__title">МАМА</p>
+        <div class="poster__authors">
+          <p class="poster__author poster__author_first">Драматург: Ольга Казакова</p>
+          <p class="poster__author poster__author_second">Режиссёр: Катя Ганюшинаяч</p>
+        </div>
+        <p class="poster__about">читка проекта Любимовка.Ещё</p>
+        <div class="poster__buttons">
+          <a class="poster__button poster__button_about link-button" href="#">
+            <img class="poster__button-img link-button__img link-button__img_direction_right" src="./images/icon_arrow.svg" alt="">
+            <span class="link-button__text">О спектакле</span>            
+          </a>
+          <a class="poster__button poster__button_tickets link-button" href="#">
+            <img class="poster__button-img poster__button-img link-button__img link-button__img_direction_right" src="./images/icon_arrow.svg" alt="">
+            <span class="link-button__text">Билеты</span>            
+          </a>
+        </div>          
+      </div>
+    </div>
+  </template>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./scripts/initial-cards.js"></script>
-
+  <script src="./scripts/posters.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 

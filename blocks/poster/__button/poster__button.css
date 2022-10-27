@@ -1,0 +1,17 @@
+.poster__button {
+  width: 150px;
+  height: auto;
+  padding: 5px 0 5px 0;
+  margin-top: 15px;
+  border-top: none;
+  border-right: none;
+  border-left: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+  .poster__button:first-of-type {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,24 @@
+.about__text {
+  max-width: 509px;
+  margin: 0;
+  margin-left: 27%;
+  font-family: 'Formular', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  font-feature-settings: 'ss01' on;
+}
+
+@media screen and (max-width: 1023px) {
+  .about__text {
+    margin-left: 20%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .about__text {
+    margin-left: 17%;
+  }
+}

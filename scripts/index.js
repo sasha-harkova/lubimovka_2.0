@@ -80,3 +80,49 @@ function toggleBurgerMenu() {
 }
 
 burgerButton.addEventListener('click', toggleBurgerMenu);
+
+
+//добавление афиш
+
+const blockThreePosters = document.querySelector('#three-posters');
+const blockTwoPosters = document.querySelector('#two-posters');
+const blockOnePoster = document.querySelector('#one-poster');
+const templatePosters = document.querySelector('#poster').content;
+
+function createPoster(obj) {
+  const poster = templatePosters.cloneNode(true);
+  poster.querySelector('.poster__image').src = obj.image;
+  poster.querySelector('.poster__image').alt = `Афиша спекталя ${obj.name}`;
+  poster.querySelector('.poster__date').textContent = obj.date;
+  poster.querySelector('.poster__time').textContent = obj.time;
+  poster.querySelector('.poster__title').textContent = obj.name;
+  poster.querySelector('.poster__author_first').textContent = obj.authorFirst;
+  poster.querySelector('.poster__author_second').textContent = obj.authorSecond;
+  poster.querySelector('.poster__about').textContent = obj.about;
+  poster.querySelector('.poster__button_about').href = obj.linkAbout;
+  poster.querySelector('.poster__button_tickets').href = obj.linkBuyTicket;
+  return poster;
+};
+
+function renderPoster(obj, block) {
+  block.append(createPoster(obj));
+}
+
+function addPostersToBlock(arr, block) {
+  arr.forEach(item => (renderPoster(item, block)));
+};
+
+function addPostersToBlockTwoPosters() {
+  addPostersToBlock(twoPosters, blockTwoPosters);
+  blockTwoPosters.querySelectorAll('.poster').forEach(item => item.classList.add('poster_for-double'));
+}
+
+function addPostersToBlockOnePoster() {
+  addPostersToBlock(onePoster, blockOnePoster);
+  blockOnePoster.querySelector('.poster').classList.add('poster_for-single');
+  blockOnePoster.querySelector('.poster-border').classList.add('poster-border_for-single');
+}
+
+addPostersToBlock(threePosters, blockThreePosters);
+addPostersToBlockTwoPosters()
+addPostersToBlockOnePoster()

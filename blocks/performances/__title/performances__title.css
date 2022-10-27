@@ -1,0 +1,16 @@
+.performances__title {
+  margin: 117px 0 0 60px;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .performances__title {
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .performances__title {
+    display: none;
+  }
+}
