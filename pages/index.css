@@ -48,6 +48,19 @@
 @import url(../blocks/else/__image/else__image.css);
 /* ABOUT */
 /* VIDEO */
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__slider-container/video__slider-container.css);
+@import url(../blocks/video/__slider/video__slider.css);
+@import url(../blocks/video/__slide/video__slide.css);
+@import url(../blocks/video/__one-video/video__one-video.css);
+@import url(../blocks/video/__section-title/video__section-title.css);
+@import url(../blocks/video/__video-block/video__video-block.css);
+@import url(../blocks/video/__media/video__media.css);
+@import url(../blocks/video/__button/video__button.css);
+@import url(../blocks/video/__button/_enabled/video__button_enabled.css);
+@import url(../blocks/video/__description/video__description.css);
+@import url(../blocks/video/__multiple-videos/video__multiple-videos.css);
+
 /* PHOTO */
 /* PERFORMANCES */
 /* PLAYS */
