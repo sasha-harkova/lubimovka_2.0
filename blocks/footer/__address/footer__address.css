@@ -3,3 +3,23 @@
   grid-area: footer__address;
   padding-left: 8px;
 }
+
+
+@media screen and (max-width: 1023px) {
+  .footer__address {
+    padding: 0;
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__address {
+    padding-top: 32.5px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer__address {
+    padding-left: 55px;
+  }
+}

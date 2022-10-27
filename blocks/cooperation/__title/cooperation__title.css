@@ -9,4 +9,13 @@
   line-height: 1.06;
   letter-spacing: -0.01em;
   color: #242424;
+  min-width: 272px;
+}
+
+@media screen and (max-width: 767px) {
+  .cooperation__title {
+    max-width: 320px;
+    font-size: 28px;
+    line-height: 1.14;
+  }
 }

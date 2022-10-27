@@ -5,3 +5,9 @@
 .footer__links-list-item:first-of-type {
   margin: 0;
 }
+
+@media screen and (max-width: 414px) {
+  .footer__links-list-item {
+    margin-top: 12px;
+  }
+}

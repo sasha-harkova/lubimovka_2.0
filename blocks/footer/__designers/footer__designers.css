@@ -3,3 +3,9 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
 }
+
+@media screen and (max-width: 885px) {
+  .footer__designers {
+    align-self: flex-start;
+  }
+}
