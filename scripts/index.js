@@ -1,4 +1,22 @@
-//Parameters of VIDEO-section
+// ---------------------- CONSTANTS ---------------------- 
+const videoSlideItem = document.querySelector('#video__slide');
+const twoVideosBlock = document.querySelector('#two-videos');
+const multipleVideosBlock = document.querySelector('#multiple-videos');
+const burgerPopup = document.querySelector('.burger-popup');
+const burgerButton = document.querySelector('.burger-button');
+const blockThreePosters = document.querySelector('#three-posters');
+const blockTwoPosters = document.querySelector('#two-posters');
+const blockOnePoster = document.querySelector('#one-poster');
+const templatePosters = document.querySelector('#poster').content;
+const photosContainer = document.querySelector('.photo__grid');
+const photosPopup = document.querySelector('.photo-popup');
+const photoGrid = document.querySelector('.photo__grid');
+const photoPopupCloseBtn = document.querySelector('.photo-popup__close-button');
+let initialPhotoSlide;
+
+
+// ---------------------- SLIDERS INITIALIZATION ---------------------- 
+//Parameters of VIDEO-section slider
 const videoSwiper = new Swiper('.video__slider-container', {
   wrapperClass: 'video__slider',
   slideClass: 'video__slide',
@@ -7,10 +25,6 @@ const videoSwiper = new Swiper('.video__slider-container', {
   slideToClickedSlide: true,
   keyboard: true,
 });
-
-const videoSlideItem = document.querySelector('#video__slide');
-const twoVideosBlock = document.querySelector('#two-videos');
-const multipleVideosBlock = document.querySelector('#multiple-videos');
 
 // Parameters of PLAYS-section slider
 const playsSwiper = new Swiper('.plays__cards', {
@@ -34,7 +48,34 @@ const personsSwiper = new Swiper('.persons__cards', {
   keyboard: true,
 });
 
-// VIDEO-SECTION functions
+
+// ---------------------- FUNCTIONS ---------------------- 
+
+// Function to open popup
+function openPopup(popup) {
+  popup.classList.add('popup_opened');
+  document.addEventListener('keydown', closePopupByEsc);
+}
+
+// Function to close popup
+function closePopup(){
+  document.querySelector('.popup_opened').classList.remove('popup_opened');
+  document.removeEventListener('keydown', closePopupByEsc);
+}
+
+// Function to close popup by pressing the escape key
+function closePopupByEsc(evt) {
+  if (evt.key === 'Escape') closePopup();
+}
+
+//Burger-menu switcher
+function toggleBurgerMenu() {
+  burgerPopup.classList.toggle('burger-popup_opened');
+  burgerButton.classList.toggle('burger-button_active');
+}
+
+
+// ---------------------- VIDEO-SECTION HANDLING ---------------------- 
 // Function: get the video id from url
 function generateURL(id) {
   let query = '?rel=0&showinfo=0&autoplay=1';
@@ -56,7 +97,8 @@ function createIframe(id) {
 
 // Function: parse youtube media id
 function parseMediaURL(media) {
-  let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+  let regexp =
+    /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
   let url = media.src;
   let match = url.match(regexp);
 
@@ -64,13 +106,13 @@ function parseMediaURL(media) {
 }
 
 // Function: append iframe and button
-function setupVideo (video) {
+function setupVideo(video) {
   const link = video.querySelector('.video__link');
   const media = video.querySelector('.video__media');
   const button = video.querySelector('.video__button');
   const id = parseMediaURL(media);
 
-  video.addEventListener ('click', () => {
+  video.addEventListener('click', () => {
     const iframe = createIframe(id);
     link.remove();
     button.remove();
@@ -90,8 +132,10 @@ function findVideos() {
   }
 }
 
+
+// ---------------------- CREATING FUNCTIONS -------------------------
 // VIDEO-section function: append new video to slider
-function createVideoBlock (url) {
+function createVideoBlock(url) {
   const videoSlide = videoSlideItem.content.cloneNode(true);
   const link = videoSlide.querySelector('.video__link');
   const source = videoSlide.querySelector('.video__source');
@@ -106,12 +150,6 @@ function createVideoBlock (url) {
   image.src = 'https://i.ytimg.com/vi/' + id + '/maxresdefault.jpg';
 
   return videoSlide;
-}
-
-function appendVideo (block, videoLinks) {
-  for (let i=0; i < videoLinks.length; i++) {
-    block.append(createVideoBlock(videoLinks[i]));
-  }
 }
 
 // Creation of PLAYS-section card from a template
@@ -138,48 +176,16 @@ function createPersonCard(cardData) {
     .content.querySelector('.persons__slide')
     .cloneNode(true);
 
-  cardElement.querySelector('.persons__card-photo').style.backgroundImage = `url(${image})`;
+  cardElement.querySelector(
+    '.persons__card-photo'
+  ).style.backgroundImage = `url(${image})`;
   cardElement.querySelector('.persons__card-caption-name').textContent = name;
   cardElement.querySelector('.persons__card-caption-about').textContent = about;
 
   return cardElement;
 }
 
-// Rendering cards to the end of the node
-function renderCard(slider, card) {
-  slider.appendSlide(card);
-}
-
-// Inserting cards from the initial array
-function loadInitialCards(cards, createFunction, swiper) {
-  cards.forEach((element) => {
-    const newCard = createFunction(element);
-    renderCard(swiper, newCard);
-  });
-}
-
-loadInitialCards(playsInitialCards, createPlayCard, playsSwiper);
-loadInitialCards(personsInitialCards, createPersonCard, personsSwiper);
-
-//открытие попапа бургерного меню
-
-const burgerPopup = document.querySelector('.burger-popup');
-  const burgerButton = document.querySelector('.burger-button');
-
-function toggleBurgerMenu() {  
-  burgerPopup.classList.toggle('burger-popup_opened');
-  burgerButton.classList.toggle('burger-button_active');
-}
-
-burgerButton.addEventListener('click', toggleBurgerMenu);
-
-//добавление афиш
-
-const blockThreePosters = document.querySelector('#three-posters');
-const blockTwoPosters = document.querySelector('#two-posters');
-const blockOnePoster = document.querySelector('#one-poster');
-const templatePosters = document.querySelector('#poster').content;
-
+// Creation of posters for PERFORMANCES-section
 function createPoster(obj) {
   const poster = templatePosters.cloneNode(true);
   poster.querySelector('.poster__image').src = obj.image;
@@ -192,34 +198,116 @@ function createPoster(obj) {
   poster.querySelector('.poster__about').textContent = obj.about;
   poster.querySelector('.poster__button_about').href = obj.linkAbout;
   poster.querySelector('.poster__button_tickets').href = obj.linkBuyTicket;
+
   return poster;
-};
-
-function renderPoster(obj, block) {
-  block.append(createPoster(obj));
 }
 
-function addPostersToBlock(arr, block) {
-  arr.forEach(item => (renderPoster(item, block)));
-};
+// Creation of photo for PHOTO section
+function createPhoto(photoData) {
+  const { name, src } = photoData;
+  const photo = document.createElement('img');
 
-function addPostersToBlockTwoPosters() {
-  addPostersToBlock(twoPosters, blockTwoPosters);
-  blockTwoPosters.querySelectorAll('.poster').forEach(item => item.classList.add('poster_for-double'));
+  photo.src = src;
+  photo.alt = name;
+  photo.classList.add('photo__item');
+
+  return photo;
 }
 
-function addPostersToBlockOnePoster() {
-  addPostersToBlock(onePoster, blockOnePoster);
-  blockOnePoster.querySelector('.poster').classList.add('poster_for-single');
-  blockOnePoster.querySelector('.poster-border').classList.add('poster-border_for-single');
+// Creation of photo for PHOTO-POPUP
+function createPopupPhoto(photoData) {
+  const { name, src } = photoData;
+  const picture = document
+    .querySelector('#photo-popup-slider')
+    .content.querySelector('.photo-popup__slide')
+    .cloneNode(true);
+  const image = picture.querySelector('.photo-popup__image');
+
+  image.src = src;
+  image.alt = name;
+
+  return picture;
 }
 
-addPostersToBlock(threePosters, blockThreePosters);
-addPostersToBlockTwoPosters()
-addPostersToBlockOnePoster()
 
-//
-appendVideo(twoVideosBlock, twoVideosInitialSlides);
-appendVideo(multipleVideosBlock, multipleVideosInitialSlides);
+// ---------------------- RENDER FUNCTIONS ---------------------- 
+// Render function
+function renderItems(item, block) {
+  block.append(item);
+}
+
+// Slider render function
+function renderSlide(card, slider) {
+  slider.appendSlide(card);
+}
+
+
+// ---------------------- INSERTING FUNCTIONS ----------------------
+// Inserting data from the initial arrays
+function loadInitialData(data, createFunction, renderFunction, node) {
+  data.forEach((item) => {
+    const element = createFunction(item);
+    renderFunction(element, node);
+  });
+}
+
+// Modifier for one poster-card
+function modifyOnePosterLoad(loadFunction, data, createFunction, renderFunction, node) {
+  loadFunction(data, createFunction, renderFunction, node);
+  node.querySelector('.poster').classList.add('poster_for-single');
+  node.querySelector('.poster-border')
+  .classList.add('poster-border_for-single');
+}
+
+// Modifier for two poster-cards
+function modifyTwoPostersLoad(loadFunction, data, createFunction, renderFunction, node) {
+  loadFunction(data, createFunction, renderFunction, node);
+  node
+    .querySelectorAll('.poster')
+    .forEach((item) => item.classList.add('poster_for-double'));
+}
+
+// Enable slider by click on photo
+function enablePhotoPopupSlider(evt) {
+  // Open target photo
+  initialPhotos.forEach(item => {
+    if (item.name === evt.target.alt) initialPhotoSlide = initialPhotos.indexOf(item);
+  });
+  // Initialize slider of PHOTO-POPUP
+  const photoPopupSwiper = new Swiper('.photo-popup__container', {
+    wrapperClass: 'photo-popup__wrapper',
+    slideClass: 'photo-popup__slide',
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    speed: 1000,
+    slideToClickedSlide: true,
+    keyboard: true,
+    initialSlide: initialPhotoSlide,
+    navigation: {
+      nextEl: '.photo-popup__next-btn',
+      prevEl: '.photo-popup__prev-btn'
+    },
+  });
+  // Load initial cards of PHOTO-POPUP slider
+  loadInitialData(initialPhotos, createPopupPhoto, renderSlide, photoPopupSwiper);
+  // Open PHOTO-POPUP
+  openPopup(photosPopup);
+}
+
+
+// ---------------------- EVENT LISTENERS ---------------------- 
+burgerButton.addEventListener('click', toggleBurgerMenu);
+photoPopupCloseBtn.addEventListener('click', closePopup);
+photoGrid.addEventListener('click', enablePhotoPopupSlider);
+
+loadInitialData(twoVideosInitialSlides, createVideoBlock, renderItems, twoVideosBlock);
+loadInitialData(multipleVideosInitialSlides, createVideoBlock, renderItems, multipleVideosBlock);
+loadInitialData(initialPhotos, createPhoto, renderItems, photosContainer);
+loadInitialData(playsInitialCards, createPlayCard, renderSlide, playsSwiper);
+loadInitialData(personsInitialCards, createPersonCard, renderSlide, personsSwiper);
+loadInitialData(threePosters, createPoster, renderItems, blockThreePosters);
+
+modifyOnePosterLoad(loadInitialData, onePoster, createPoster, renderItems, blockOnePoster);
+modifyTwoPostersLoad(loadInitialData, twoPosters, createPoster, renderItems, blockTwoPosters);
+
 findVideos();
-

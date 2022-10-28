@@ -1,0 +1,13 @@
+.photo-popup__button {
+    position: absolute;
+    top: 50vh;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../images/icon_slider_arrow.svg);
+    border: none;
+    border-radius: 50%;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
