@@ -8,3 +8,10 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .poster__buttons {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+}

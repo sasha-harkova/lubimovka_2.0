@@ -1,0 +1,8 @@
+.photo-popup__slide {
+    margin: 0;
+    padding: 0;
+    width: 75vw;
+    flex-shrink: 0;
+    display: flex;
+    position: relative;
+}

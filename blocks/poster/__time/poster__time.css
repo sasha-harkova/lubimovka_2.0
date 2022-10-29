@@ -6,3 +6,9 @@
   letter-spacing: -0.01em;
   font-feature-settings: "ss01" on;
 }
+
+@media screen and (max-width: 380px) {
+  .poster__time {
+    margin-left: 20px;
+  }
+}

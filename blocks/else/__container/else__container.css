@@ -2,7 +2,7 @@
   display: flex;
 }
 
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 650px) {
   .else__container {
     flex-direction: column;
   }

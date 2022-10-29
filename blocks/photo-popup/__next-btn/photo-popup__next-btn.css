@@ -1,0 +1,4 @@
+.photo-popup__next-btn {
+    right: 10vw;
+    transform: rotate(180deg);
+}

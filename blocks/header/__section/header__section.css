@@ -1,17 +1,8 @@
 .header__section {
   display: flex;
   align-items: center;
-  padding-top: 5px;
-  padding-bottom: 17px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   border-bottom: 1px solid #242424;
-}
-
-@media screen and (max-width: 1279px) {
-  .header__section {
-    padding: 5px 0 10px 0;
-  }
 }
 
 @media screen and (max-width: 767px) {

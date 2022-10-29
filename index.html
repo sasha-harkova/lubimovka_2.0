@@ -36,9 +36,9 @@
         <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" href="#">vk</a></li>
       </ul>
       <div class="header__section header__section_donation">
-        <a class="header__donation-link navbar-item-animation" href="#">
-          <img class="header__donation-icon" src="./images/icon_plus.svg" alt="">
-          <span class="header__donation-text">Поддержать</span>
+        <a class="header__donation-link link-button" href="#">
+          <img class="link-button__img header__donation-icon" src="./images/icon_plus.svg" alt="">
+          <span class="link-button__text header__donation-text">Поддержать</span>
         </a>
       </div>
       <div class="header__projects">
@@ -61,11 +61,12 @@
     </section>
     <section class="about">
       <h2 class="section-title about__title">О проекте</h2>
-      <p class="about__text">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: 
+      <p class="about__text">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами
+        московских театров:
         Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
     </section>
     <section class="video">
-      <h2 class="section-title video__section-title">Заголовок блока с видео</h2>
+      <h2 class="section-title">Заголовок блока с видео</h2>
       <div class="video__one-video">
         <div class="video__video-block">
           <a class="video__link" href="https://www.youtube.com/watch?v=Msvr9vaWxDo">
@@ -88,14 +89,14 @@
           догадались, домыслили, дочувствовали что-то.
         </p>
       </div>
-      <h2 class="section-title video__section-title">Заголовок блока с двумя видео</h2>
+      <h2 class="section-title">Заголовок блока с двумя видео</h2>
       <div class="video__multiple-videos">
         <div class="video__slider-container">
           <div id="two-videos" class="video__slider">
           </div>
         </div>
       </div>
-      <h2 class="section-title video__section-title">Заголовок блока с тремя видео</h2>
+      <h2 class="section-title">Заголовок блока с тремя видео</h2>
       <div class="video__multiple-videos">
         <div class="video__slider-container">
           <div id="multiple-videos" class="video__slider">
@@ -106,39 +107,35 @@
     <section class="photo">
       <h2 class="section-title">Заголовок блока с фотографиями</h2>
       <div class="photo__grid">
-        <img src="./images/photo_grid_1.jpg" alt="" class="photo__item">
-        <img src="./images/photo_grid_2.jpg" alt="" class="photo__item">
-        <img src="./images/photo_grid_3.jpg" alt="" class="photo__item">
-        <img src="./images/photo_grid_4.jpg" alt="" class="photo__item">
-        <img src="./images/photo_grid_5.jpg" alt="" class="photo__item">
-        <img src="./images/photo_grid_6.jpg" alt="" class="photo__item">
-        <img src="./images/photo_grid_7.jpg" alt="" class="photo__item">
-        <img src="./images/photo_grid_8.jpg" alt="" class="photo__item">
       </div>
     </section>
     <section class="performances">
       <div class="performances__container">
-        <h2 class="section-title section-title_short performances__title">Заголовок блока с тремя и более спектаклями</h2>
-        <h2 class="section-title section-title_short performances__title performances__title_mob">Заголовок блока со спектаклями любое количество</h2>
-        <div class="perfomances__posters" id="three-posters"></div>        
+        <h2 class="section-title section-title_short performances__title">Заголовок блока с тремя и более спектаклями
+        </h2>
+        <h2 class="section-title section-title_short performances__title performances__title_mob">Заголовок блока со
+          спектаклями любое количество</h2>
+        <div class="perfomances__posters" id="three-posters"></div>
       </div>
       <div class="performances__container performances__container_mob">
-        <h2 class="section-title section-title_middle performances__title performances__title_for-double">Заголовок блока с двумя спектаклями</h2>
-        <div class="perfomances__posters perfomances__posters_for-double" id="two-posters"></div>        
+        <h2 class="section-title section-title_middle performances__title performances__title_for-double">Заголовок
+          блока с двумя спектаклями</h2>
+        <div class="perfomances__posters perfomances__posters_for-double" id="two-posters"></div>
       </div>
       <div class="performances__container performances__container_for-single performances__container_mob ">
-        <h2 class="section-title section-title_middle performances__title performances__title_for-single">Заголовок блока с одним спектаклем</h2>
+        <h2 class="section-title section-title_middle performances__title performances__title_for-single">Заголовок
+          блока с одним спектаклем</h2>
         <div class="perfomances__posters" id="one-poster"></div>
       </div>
-    </section> 
+    </section>
     <section class="plays">
-      <h2 class="section-title section-title_short">Заголовок блока с пьесами</h2>
+      <h2 class="section-title section-title_short section-title_zero-indent">Заголовок блока с пьесами</h2>
       <div class="plays__cards">
         <div class="plays__wrapper"></div>
       </div>
     </section>
     <section class="persons">
-      <h2 class="section-title section-title_short">Заголовок блока с персонами</h2>
+      <h2 class="section-title section-title_short section-title_zero-indent">Заголовок блока с персонами</h2>
       <div class="persons__cards">
         <div class="persons__wrapper"></div>
       </div>
@@ -283,28 +280,16 @@
   </footer>
 
   <!-- PHOTO POPUP -->
-  <div class="photo-popup">
-    <button aria-label="закрыть" class="photo-popup__close-button" type="button"></button>
+  <div class="popup photo-popup">
+    <button aria-label="Закрыть." class="photo-popup__close-button" type="button"></button>
     <div class="photo-popup__container">
-      <div class="photo-popup__slide">
-        <img src="./images/photo-popup8.jpg" class="photo-popup__last-slide-clone" alt="">
-        <img src="./images/photo-popup1.jpg" alt="">
-        <img src="./images/photo-popup2.jpg" alt="">
-        <img src="./images/photo-popup3.jpg" alt="">
-        <img src="./images/photo-popup4.jpg" alt="">
-        <img src="./images/photo-popup5.jpg" alt="">
-        <img src="./images/photo-popup6.jpg" alt="">
-        <img src="./images/photo-popup7.jpg" alt="">
-        <img src="./images/photo-popup8.jpg" alt="">
-        <img src="./images/photo-popup1.jpg" class="photo-popup__first-slide-clone" alt="">
-      </div>
-      <button aria-label="назад" class="photo-popup__button photo-popup__prevBtn" type="button"></button>
-      <button aria-label="вперед" class="photo-popup__button photo-popup__nextBtn" type="button"></button>
+      <div class="photo-popup__wrapper"></div>
+      <button aria-label="Назад." class="photo-popup__button photo-popup__prev-btn" type="button"></button>
+      <button aria-label="Вперёд." class="photo-popup__button photo-popup__next-btn" type="button"></button>
     </div>
   </div>
 
   <!-- BURGER POPUP -->
->>>>>>> develop
   <div class="burger-popup">
     <img class="burger-popup__logo" src="./images/lubimovka_logo.svg" alt="Логотип проекта Любимовка">
     <nav>
@@ -398,7 +383,7 @@
     </div>
   </template>
 
-  <!-- PERFOMANCE POSTER TEMPLATE -->
+  <!-- PERFORMANCE POSTER TEMPLATE -->
   <template id="poster">
     <div class="poster-border">
       <div class="poster">
@@ -406,7 +391,7 @@
         <div class="poster__dates">
           <p class="poster__date">15 декабря</p>
           <p class="poster__time">11:00</p>
-        </div>        
+        </div>
         <p class="poster__title">МАМА</p>
         <div class="poster__authors">
           <p class="poster__author poster__author_first">Драматург: Ольга Казакова</p>
@@ -415,24 +400,31 @@
         <p class="poster__about">читка проекта Любимовка.Ещё</p>
         <div class="poster__buttons">
           <a class="poster__button poster__button_about link-button" href="#">
-            <img class="poster__button-img link-button__img link-button__img_direction_right" src="./images/icon_arrow.svg" alt="">
-            <span class="link-button__text">О спектакле</span>            
+            <img class="poster__button-img link-button__img link-button__img_direction_right"
+              src="./images/icon_arrow.svg" alt="">
+            <span class="link-button__text">О спектакле</span>
           </a>
           <a class="poster__button poster__button_tickets link-button" href="#">
-            <img class="poster__button-img poster__button-img link-button__img link-button__img_direction_right" src="./images/icon_arrow.svg" alt="">
-            <span class="link-button__text">Билеты</span>            
+            <img class="poster__button-img poster__button-img link-button__img link-button__img_direction_right"
+              src="./images/icon_arrow.svg" alt="">
+            <span class="link-button__text">Билеты</span>
           </a>
-        </div>          
+        </div>
       </div>
     </div>
   </template>
 
+  <!-- PHOTO-POPUP SLIDE TEMPLATE -->
+  <template id="photo-popup-slider">
+    <div class="photo-popup__slide">
+      <img src="#" alt="#" class="photo-popup__image">
+    </div>
+  </template>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./scripts/initial-cards.js"></script>
-  <script src="./scripts/posters.js"></script>
-  <script src="./scripts/initial-videos.js"></script>
-  <script src="./scripts/photoGallery.js"></script>
+  <script src="scripts/initial-cards.js"></script>
   <script src="scripts/index.js"></script>
 
 </body>
+
 </html>

@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 767px) {
   .section-title {
-    margin-left: 0;
+    margin-left: 24px;
     margin-right: 0;
     padding-bottom: 32px;
     font-size: 28px;
