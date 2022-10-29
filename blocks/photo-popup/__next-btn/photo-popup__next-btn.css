@@ -2,3 +2,8 @@
     right: 10vw;
     transform: rotate(180deg);
 }
+
+.photo-popup__next-btn:active {
+    transform: rotate(180deg) scale(1.1);
+    transition-delay: 0s;
+}

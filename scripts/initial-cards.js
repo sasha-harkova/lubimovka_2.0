@@ -60,7 +60,7 @@ const personsInitialCards = [
 // First block array
 const threePosters = [
   {
-    image: './images/poster__mama.jpg',
+    image: './images/poster_mama.jpg',
     date: '15 декабря ',
     time: '11:00',
     name: 'МАМА',
@@ -82,7 +82,7 @@ const threePosters = [
     linkBuyTicket: '#',
   },
   {
-    image: './images/poster__mama.jpg',
+    image: './images/poster_mama.jpg',
     date: '15 декабря ',
     time: '11:00',
     name: 'МАМА',
@@ -97,7 +97,7 @@ const threePosters = [
 // Second block array
 const twoPosters = [
   {
-    image: './images/poster__mama.jpg',
+    image: './images/poster_mama.jpg',
     date: '15 декабря ',
     time: '11:00',
     name: 'МАМА',
