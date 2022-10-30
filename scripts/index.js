@@ -204,11 +204,12 @@ function createPoster(obj) {
 
 // Creation of photo for PHOTO section
 function createPhoto(photoData) {
-  const { name, src } = photoData;
+  const { name, src, id } = photoData;
   const photo = document.createElement('img');
 
   photo.src = src;
   photo.alt = name;
+  photo.id = id;
   photo.classList.add('photo__item');
 
   return photo;
@@ -269,10 +270,6 @@ function modifyTwoPostersLoad(loadFunction, data, createFunction, renderFunction
 
 // Enable slider by click on photo
 function enablePhotoPopupSlider(evt) {
-  // Open target photo
-  initialPhotos.forEach(item => {
-    if (item.name === evt.target.alt) initialPhotoSlide = initialPhotos.indexOf(item);
-  });
   // Initialize slider of PHOTO-POPUP
   const photoPopupSwiper = new Swiper('.photo-popup__container', {
     wrapperClass: 'photo-popup__wrapper',
@@ -282,7 +279,7 @@ function enablePhotoPopupSlider(evt) {
     speed: 1000,
     slideToClickedSlide: true,
     keyboard: true,
-    initialSlide: initialPhotoSlide,
+    initialSlide: evt.target.id,
     navigation: {
       nextEl: '.photo-popup__next-btn',
       prevEl: '.photo-popup__prev-btn'

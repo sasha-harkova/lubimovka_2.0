@@ -150,12 +150,12 @@ const multipleVideosInitialSlides = [
 
 // Array of initial photos for PHOTO section
 const initialPhotos = [
-  { name: 'Первое фото.', src: './images/photo_grid_1.jpg' },
-  { name: 'Второе фото.', src: './images/photo_grid_2.jpg' },
-  { name: 'Третье фото.', src: './images/photo_grid_3.jpg' },
-  { name: 'Четвёртое фото.', src: './images/photo_grid_4.jpg' },
-  { name: 'Пятое фото.', src: './images/photo_grid_5.jpg' },
-  { name: 'Шестое фото.', src: './images/photo_grid_6.jpg' },
-  { name: 'Седьмое фото.', src: './images/photo_grid_7.jpg' },
-  { name: 'Восьмое фото.', src: './images/photo_grid_8.jpg' },
+  { name: 'Первое фото.', src: './images/photo_grid_1.jpg', id: 0 },
+  { name: 'Второе фото.', src: './images/photo_grid_2.jpg', id: 1 },
+  { name: 'Третье фото.', src: './images/photo_grid_3.jpg', id: 2 },
+  { name: 'Четвёртое фото.', src: './images/photo_grid_4.jpg', id: 3 },
+  { name: 'Пятое фото.', src: './images/photo_grid_5.jpg', id: 4 },
+  { name: 'Шестое фото.', src: './images/photo_grid_6.jpg', id: 5 },
+  { name: 'Седьмое фото.', src: './images/photo_grid_7.jpg', id: 6 },
+  { name: 'Восьмое фото.', src: './images/photo_grid_8.jpg', id: 7 },
 ];
