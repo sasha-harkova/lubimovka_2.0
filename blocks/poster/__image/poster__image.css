@@ -8,8 +8,8 @@
 
 @media screen and (max-width: 767px) {
   .poster__image {
-    width: 92px;
-    height: 123px;
+    max-width: 92px;
+    max-height: 123px;
     padding-right: 5px;
   }
 }
