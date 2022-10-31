@@ -8,13 +8,13 @@
   margin: 0;
 }
 
-@media screen and (max-width: 444px) {
+@media screen and (max-width: 767px) {
   .footer__links-list {
     margin: 0 0 0 48px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 413px) {
   .footer__links-list {
     margin: 0 0 0 30px;
   }

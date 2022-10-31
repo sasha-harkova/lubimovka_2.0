@@ -9,8 +9,8 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 413px) {
   .footer__links-allprojects {
-    padding-left: 55px;
+    padding-left: 40px;
   }
 }

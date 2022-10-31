@@ -6,7 +6,7 @@
   position: fixed;
   right: 0;
   top: 11px;
-  background: #242424  no-repeat center;
+  background: #242424 no-repeat center;
   background-image: url(../../images/icon_burger_menu.svg);
   background-size: 20px 12px;
   cursor: pointer;
@@ -19,6 +19,13 @@
 
 @media screen and (max-width: 767px) {
   .burger-button {
-  display: block;
- }
+    display: block;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .burger-button {
+    width: 57px;
+    height: 57px;
+  }
 }

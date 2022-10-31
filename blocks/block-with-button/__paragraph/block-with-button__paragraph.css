@@ -11,9 +11,9 @@
   padding: 20px 0 0;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 413px) {
   .block-with-button__paragraph {
     padding-top: 16px;
-    margin-left: 62px;
+    margin-left: 0;
   }
 }

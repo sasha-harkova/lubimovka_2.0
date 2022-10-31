@@ -12,7 +12,6 @@ const photosContainer = document.querySelector('.photo__grid');
 const photosPopup = document.querySelector('.photo-popup');
 const photoGrid = document.querySelector('.photo__grid');
 const photoPopupCloseBtn = document.querySelector('.photo-popup__close-button');
-let initialPhotoSlide;
 
 
 // ---------------------- SLIDERS INITIALIZATION ---------------------- 
@@ -55,12 +54,14 @@ const personsSwiper = new Swiper('.persons__cards', {
 function openPopup(popup) {
   popup.classList.add('popup_opened');
   document.addEventListener('keydown', closePopupByEsc);
+  photoPopupCloseBtn.addEventListener('click', closePopup);
 }
 
 // Function to close popup
 function closePopup(){
   document.querySelector('.popup_opened').classList.remove('popup_opened');
   document.removeEventListener('keydown', closePopupByEsc);
+  photoPopupCloseBtn.removeEventListener('click', closePopup);
 }
 
 // Function to close popup by pressing the escape key
@@ -294,7 +295,6 @@ function enablePhotoPopupSlider(evt) {
 
 // ---------------------- EVENT LISTENERS ---------------------- 
 burgerButton.addEventListener('click', toggleBurgerMenu);
-photoPopupCloseBtn.addEventListener('click', closePopup);
 photoGrid.addEventListener('click', enablePhotoPopupSlider);
 
 loadInitialData(twoVideosInitialSlides, createVideoBlock, renderItems, twoVideosBlock);

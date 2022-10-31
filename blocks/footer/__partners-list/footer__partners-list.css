@@ -16,3 +16,11 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 413px) {
+  .footer__partners-list {
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 20px;
+  }
+}

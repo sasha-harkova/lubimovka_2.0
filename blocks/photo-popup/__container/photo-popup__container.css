@@ -3,4 +3,11 @@
     width: 65vw;
     max-width: 936px;
     overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .photo-popup__container {
+        width: 100vw;
+    }
 }

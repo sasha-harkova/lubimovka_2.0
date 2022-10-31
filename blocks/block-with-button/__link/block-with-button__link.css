@@ -18,9 +18,8 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 413px) {
   .block-with-button__link {
-    margin-left: 17%;
-    width: 83%;
+    width: 100%;
   }
 }
