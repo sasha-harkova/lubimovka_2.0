@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 975px) {
   .performances__title_mob {
     margin-bottom: 30px;
     display: block;
