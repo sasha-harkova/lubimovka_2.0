@@ -10,7 +10,7 @@
     ". buttons";
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 980px) {
   .poster {
     margin: 30px 30px;
   }

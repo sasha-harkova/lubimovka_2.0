@@ -1,7 +1,7 @@
 .plays {
-    margin: 100px 0 0 60px;
-    padding: 0;
-    width: calc(100% - 60px);
+    padding: 0 0 0 60px;
+    margin-right: 0;
+    width: 100%;
     box-sizing: border-box;
     font-family: 'Formular', 'Arial', sans-serif;
     font-family: 'Neue Machina', 'Arial', sans-serif;
@@ -9,21 +9,18 @@
 
 @media screen and (max-width: 1280px) {
     .plays {
-        margin-left: 45px;
-        width: calc(100% - 45px);
+        padding-left: 45px;
     }
 }
 
 @media screen and (max-width: 1023px) {
     .plays {
-        margin-left: 30px;
-        width: calc(100% - 30px);
+        padding-left: 30px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .plays {
-        margin-left: 24px;
-        width: calc(100% - 24px);
+        padding-left: 24px;
     }
 }

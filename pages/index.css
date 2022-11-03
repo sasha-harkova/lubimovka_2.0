@@ -22,6 +22,9 @@
 @import url(../blocks/section-title/_middle/section-title_middle.css);
 @import url(../blocks/section-title/_zero-indent/section-title_zero-indent.css);
 
+/* block-indent */
+@import url(../blocks/block-indent/block-indent.css);
+
 /* popup */
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);

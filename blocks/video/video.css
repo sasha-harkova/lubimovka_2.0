@@ -1,13 +1,8 @@
 .video {
     display: flex;
     flex-direction: column;
-    padding-top: 98px;
-    margin: 0 auto;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-}
-
-@media screen and (max-width: 767px) {
-    .video {
-        padding-top: 57px;
-    }
 }

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 980px) {
   .perfomances__posters {
     flex-direction: column;
   }
