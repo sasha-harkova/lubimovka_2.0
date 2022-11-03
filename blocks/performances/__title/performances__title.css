@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 975px) {
   .performances__title {
     display: none;
   }
