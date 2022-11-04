@@ -1,0 +1,38 @@
+.photo-popup__button {
+    position: absolute;
+    top: 50vh;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../images/icon_slider_arrow.svg);
+    border: none;
+    border-radius: 50%;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.photo-popup__button:active {
+    transform: scale(1.1);
+    transition-delay: 0s;
+}
+
+@media screen and (max-width: 1023px) {
+    .photo-popup__button {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .photo-popup__button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .photo-popup__button {
+        top: 72vh;
+    }
+}

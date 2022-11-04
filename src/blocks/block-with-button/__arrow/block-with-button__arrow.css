@@ -1,0 +1,4 @@
+.block-with-button__arrow {
+  transform: rotateZ(180deg);
+  padding: 0 160px 0 0;
+}

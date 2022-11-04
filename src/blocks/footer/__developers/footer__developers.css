@@ -1,0 +1,11 @@
+.footer__developers {
+  max-width: 207px;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+@media screen and (max-width: 885px) {
+  .footer__developers {
+    padding-top: 13px;
+  }
+}

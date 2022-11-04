@@ -1,0 +1,41 @@
+.else__text {
+  max-width: 420px;
+  margin: 0 auto;
+  padding-left: 65px;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (max-width: 1023px) {
+  .else__text {
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .else__text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .else__text {
+    max-width: 40%;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .else__text {
+  max-width: 304px;
+  margin: 0 0 35px 86px;  
+  letter-spacing: -0.01em;
+  }
+}

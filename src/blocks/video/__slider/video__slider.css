@@ -1,0 +1,7 @@
+.video__slider {
+    margin: 0 auto;
+    padding: 0;
+    width: max-content;
+    min-height: 100%;
+    display: flex;
+}

@@ -1,0 +1,26 @@
+.footer__partners-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 31px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__partners-list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .footer__partners-list {
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 20px;
+  }
+}

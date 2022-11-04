@@ -1,0 +1,33 @@
+.link-button {
+    margin: 0;
+    padding: 0 15px 0 16px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #242424;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #242424;
+    cursor: pointer;
+    /* Button animation */
+    background: linear-gradient(to left, transparent 50%, #242424 50%) right;
+    background-repeat: no-repeat;
+    transition: background-position 0.4s, color 0.4s;
+    background-size: 200%;
+}
+
+.link-button:hover {
+    background-position: left;
+    color: #ecebe8;
+}
+
+.link-button:hover>img {
+    filter: invert(1);
+}
+
+.link-button:active {
+    transform: scale(1.1);
+}

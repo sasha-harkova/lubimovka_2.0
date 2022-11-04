@@ -1,0 +1,19 @@
+.header__donation-icon {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__donation-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  .header__donation-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

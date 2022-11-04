@@ -1,0 +1,15 @@
+.poster__image {
+  width: 120px;
+  height: 160px;
+  padding-right: 32px;
+  object-fit: cover;
+  grid-area: image;
+}
+
+@media screen and (max-width: 767px) {
+  .poster__image {
+    max-width: 92px;
+    max-height: 123px;
+    padding-right: 5px;
+  }
+}

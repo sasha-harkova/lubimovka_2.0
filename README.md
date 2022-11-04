@@ -40,6 +40,7 @@ ___
 * ##### БЭМ
 * ##### ES6
 * ##### Swiper.js
+* ##### Webpack
 * ##### Git
 ___
 ### Техническая информация
@@ -50,7 +51,8 @@ ___
 * Навигация по странице реализована при помощи CSS и JavaScript;
 * Видеоматериалы вставлены при помощи технологии iframe;
 * Анимация слайдеров на странице реализована при помощи [Swiper.js](https://swiperjs.com/);
-* Файловая структура: [БЭМ Nested](https://ru.bem.info/methodology/filestructure/#nested).
+* Файловая структура: [БЭМ Nested](https://ru.bem.info/methodology/filestructure/#nested);
+* Проект реорганизован при помощи сборщика модулей [Webpack](https://ru.wikipedia.org/wiki/Webpack).
 
 *[Узнать подробности о поддержке проекта браузерами](https://caniuse.com/?search=grid)*
 ___

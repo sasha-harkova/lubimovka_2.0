@@ -1,0 +1,8 @@
+.cooperation__link {
+  color: #242424;
+}
+
+.cooperation__link:hover {
+  color: #fff;
+  background-color: #242424;
+}

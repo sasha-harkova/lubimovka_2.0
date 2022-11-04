@@ -1,0 +1,6 @@
+.header__list {
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin: 0;
+  border-right: 1px solid #242424;
+}

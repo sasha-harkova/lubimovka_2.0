@@ -1,0 +1,10 @@
+.cooperation__asterisk {
+  position: absolute;
+  transform: translateX(-27px) translateY(-26px);
+}
+
+@media screen and (max-width: 414px) {
+  .cooperation__asterisk {
+    transform: translateX(-31px) translateY(-26px);
+  }
+}

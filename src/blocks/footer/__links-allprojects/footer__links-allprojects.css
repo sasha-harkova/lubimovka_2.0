@@ -1,0 +1,16 @@
+.footer__links-allprojects {
+  grid-area: footer__links-allprojects;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__links-allprojects {
+    padding-top: 53px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .footer__links-allprojects {
+    padding-left: 40px;
+  }
+}

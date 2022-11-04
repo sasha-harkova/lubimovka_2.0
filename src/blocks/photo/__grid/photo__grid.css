@@ -1,0 +1,12 @@
+.photo__grid {
+  display: grid;
+  max-width: 1440px;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 767px) {
+  .photo__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

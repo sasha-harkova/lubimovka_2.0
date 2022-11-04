@@ -1,0 +1,10 @@
+.footer__designers-logo {
+  width: 27px;
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__designers-logo {
+    margin: 5px 9px 0 0;
+  }
+}

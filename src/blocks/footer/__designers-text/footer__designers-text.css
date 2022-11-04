@@ -1,0 +1,12 @@
+.footer__designers-text {
+  max-width: 151px;
+  margin: 0;
+  padding: 2px 0 0;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__designers-text {
+    padding: 0;
+  }
+}

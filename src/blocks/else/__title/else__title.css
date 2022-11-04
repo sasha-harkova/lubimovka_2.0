@@ -1,0 +1,41 @@
+.else__title {
+  max-width: 450px;
+  margin: 0 0 75px 50%;
+  font-size: 72px;
+  line-height: 70px;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (max-width: 1023px) {
+  .else__title {
+    margin-bottom: 65px;
+    font-size: 60px;
+    line-height: 58px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .else__title {
+    max-width: 350px;
+    margin-bottom: 55px;
+    font-size: 50px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .else__title {
+    margin-bottom: 45px;
+    font-size: 45px;
+    line-height: 43px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .else__title {
+  max-width: 100%;
+  margin: 0 0 25px 24px;
+  font-size: 40px;
+  line-height: 40px;
+  }
+}

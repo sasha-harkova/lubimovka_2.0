@@ -1,0 +1,27 @@
+.footer__link {
+  color: #242424;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.21;
+  display: inline-block;
+}
+
+.footer__link:after {
+  background-color: #242424;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  transition: width .3s ease-in-out;
+}
+
+.footer__link:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__link {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+}

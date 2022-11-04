@@ -1,0 +1,11 @@
+.performances__container_for-single {
+  margin-top: 180px;
+  padding-left: 210px;
+  display: flex;
+}
+
+@media screen and (max-width: 1279px) {
+  .performances__container_for-single {
+    padding-left: 30px;
+  }
+}

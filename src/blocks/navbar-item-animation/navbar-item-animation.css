@@ -1,0 +1,36 @@
+.navbar-item-animation:before {
+  content: "";
+  font-family: 'Formular', 'Arial', sans-serif;;
+  border: 0.0625rem solid #242424;
+  border-right: none;
+  border-bottom-left-radius: 200% 100%;
+  border-top-left-radius: 200% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.6em;
+  width: 0.6em;
+  visibility: hidden;
+}
+
+.navbar-item-animation:after {
+  content: "";
+  border: 1px solid #242424;
+  border-left: none;
+  border-bottom-right-radius: 200% 100%;
+  border-top-right-radius: 200% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1.6em;
+  width: 0.6em;
+  visibility: hidden;
+}
+
+.navbar-item-animation:hover:before {
+  visibility: visible;
+}
+
+.navbar-item-animation:hover:after {
+  visibility: visible;
+}

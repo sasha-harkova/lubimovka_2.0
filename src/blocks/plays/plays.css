@@ -1,0 +1,26 @@
+.plays {
+    padding: 0 0 0 60px;
+    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Formular', 'Arial', sans-serif;
+    font-family: 'Neue Machina', 'Arial', sans-serif;
+}
+
+@media screen and (max-width: 1280px) {
+    .plays {
+        padding-left: 45px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .plays {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .plays {
+        padding-left: 24px;
+    }
+}

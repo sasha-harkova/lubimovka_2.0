@@ -1,0 +1,21 @@
+.photo-popup__prev-btn {
+  left: 10vw;
+}
+
+@media screen and (max-width: 1023px) {
+  .photo-popup__prev-btn {
+    left: 6vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo-popup__prev-btn {
+    left: 1vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .photo-popup__prev-btn {
+    left: 30vw;
+  }
+}

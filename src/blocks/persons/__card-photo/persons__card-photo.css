@@ -1,0 +1,9 @@
+.persons__card-photo {
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    height: 265px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

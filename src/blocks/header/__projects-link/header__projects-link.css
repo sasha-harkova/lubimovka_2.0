@@ -1,0 +1,8 @@
+.header__projects-link {
+  padding: 0 0 5px 10px;
+  height: auto;
+  border-top: none;
+  border-left: none;
+  border-bottom: 1px solid #242424;
+  border-right: 1px solid #242424;  
+}

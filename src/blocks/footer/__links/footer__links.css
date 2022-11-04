@@ -1,0 +1,23 @@
+.footer__links {
+  display: flex;
+  grid-area: footer__links;
+  justify-self: end;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__links {
+    justify-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__links {
+    padding-top: 56px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .footer__links {
+    padding-left: 40px;
+  }
+}

@@ -1,0 +1,14 @@
+.header__projects {
+  position: absolute;
+  left: 30px;
+  bottom: -64px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__projects {
+    margin-top: 34px;
+    position: static;
+    left: 0;
+    bottom: 0;
+  }
+}

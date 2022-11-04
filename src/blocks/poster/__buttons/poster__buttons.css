@@ -1,0 +1,17 @@
+.poster__buttons {
+  grid-area: buttons;
+}
+
+@media screen and (max-width: 767px) {
+  .poster__buttons {
+    margin-top: 27px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .poster__buttons {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+}

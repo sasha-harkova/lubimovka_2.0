@@ -1,0 +1,27 @@
+.cooperation {
+  margin: 100px 0 169px;
+  padding: 0 16.1% 0 48%;
+  width: 35.9%;
+}
+
+@media screen and (max-width: 1024px) {
+  .cooperation {
+    margin: 76px 0 100px;
+    padding-left: 15%;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .cooperation {
+    padding-right: 24px;
+    padding-left: 13.5%;
+    max-width: 333px;
+    width: 77%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .cooperation {
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,13 @@
+.footer__logo {
+  min-width: 93px;
+  max-width: 94px;
+  margin: 0;
+  padding: 0;
+  grid-area: footer__logo;
+}
+
+@media screen and (max-width: 413px) {
+  .footer__logo {
+    margin-left: 40px;
+  }
+}

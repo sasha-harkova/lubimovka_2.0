@@ -1,0 +1,16 @@
+.burger-popup {
+  width: 100%;
+  height: 0;
+  padding-left: 34px;
+  position: fixed;
+  top: 0;
+  left: 0;  
+  background-color: #ECEBE8;
+  font-family: 'Formular', 'Arial', sans-serif;
+  opacity: 0;
+  overflow: hidden;
+  transition-property: opacity, height;
+  transition-duration: .3s, 0s;
+  transition-delay: 0s, .3s;
+  z-index: 10;
+} 

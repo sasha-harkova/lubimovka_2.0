@@ -1,0 +1,12 @@
+.footer__authors {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 885px) {
+  .footer__authors {
+    padding-top: 59px;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,19 @@
+.footer__partners {
+  display: flex;
+  padding: 6px 0 0 8px;
+  grid-area: footer__partners;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__partners {
+    padding: 0 0 25px;
+    border-bottom: 1px solid #242424;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__partners {
+    padding: 84.5px 0 92px;
+    border-bottom: 1px solid #242424;
+  }
+}

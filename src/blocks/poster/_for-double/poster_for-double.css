@@ -1,0 +1,9 @@
+.poster_for-double {
+  margin: 0 60px;
+}
+
+@media screen and (max-width: 1279px) {
+  .poster_for-double {
+    margin: 0 30px;
+  }
+}
