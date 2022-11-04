@@ -1,3 +1,19 @@
+// Imports
+import photo_1 from '../images/photo_grid_1.jpg';
+import photo_2 from '../images/photo_grid_2.jpg';
+import photo_3 from '../images/photo_grid_3.jpg';
+import photo_4 from '../images/photo_grid_4.jpg';
+import photo_5 from '../images/photo_grid_5.jpg';
+import photo_6 from '../images/photo_grid_6.jpg';
+import photo_7 from '../images/photo_grid_7.jpg';
+import photo_8 from '../images/photo_grid_8.jpg';
+import person_1 from '../images/persons_1.png';
+import person_2 from '../images/persons_2.png';
+import person_3 from '../images/persons_3.png';
+import poster_mama from '../images/poster_mama.jpg';
+
+
+
 // Array of initial cards for PLAYS section
 const playsInitialCards = [
   {
@@ -35,22 +51,22 @@ const playsInitialCards = [
 // Array of initial cards for PERSONS section
 const personsInitialCards = [
   {
-    image: './images/persons_1.png',
+    image: person_1,
     name: 'Тереза Шимчак',
     about: 'Драматург, сценарист, преподаватель',
   },
   {
-    image: './images/persons_2.png',
+    image: person_2,
     name: 'Тереза Шимчак',
     about: 'Драматург, сценарист, преподаватель',
   },
   {
-    image: './images/persons_3.png',
+    image: person_3,
     name: 'Тереза Шимчак',
     about: 'Драматург, сценарист, преподаватель',
   },
   {
-    image: './images/persons_1.png',
+    image: person_1,
     name: 'Тереза Шимчак',
     about: 'Драматург, сценарист, преподаватель',
   },
@@ -60,7 +76,7 @@ const personsInitialCards = [
 // First block array
 const threePosters = [
   {
-    image: './images/poster_mama.jpg',
+    image: poster_mama,
     date: '15 декабря ',
     time: '11:00',
     name: 'МАМА',
@@ -71,7 +87,7 @@ const threePosters = [
     linkBuyTicket: '#',
   },
   {
-    image: './images/photo_grid_1.jpg',
+    image: photo_1,
     date: '15 декабря ',
     time: '11:00',
     name: 'Про линя',
@@ -82,7 +98,7 @@ const threePosters = [
     linkBuyTicket: '#',
   },
   {
-    image: './images/poster_mama.jpg',
+    image: poster_mama,
     date: '15 декабря ',
     time: '11:00',
     name: 'МАМА',
@@ -97,7 +113,7 @@ const threePosters = [
 // Second block array
 const twoPosters = [
   {
-    image: './images/poster_mama.jpg',
+    image: poster_mama,
     date: '15 декабря ',
     time: '11:00',
     name: 'МАМА',
@@ -108,7 +124,7 @@ const twoPosters = [
     linkBuyTicket: '#',
   },
   {
-    image: './images/photo_grid_1.jpg',
+    image: photo_1,
     date: '15 декабря ',
     time: '11:00',
     name: 'Про линя',
@@ -123,7 +139,7 @@ const twoPosters = [
 // Third block array
 const onePoster = [
   {
-    image: './images/photo_grid_1.jpg',
+    image: photo_1,
     date: '15 декабря ',
     time: '11:00',
     name: 'Про линя',
@@ -150,12 +166,23 @@ const multipleVideosInitialSlides = [
 
 // Array of initial photos for PHOTO section
 const initialPhotos = [
-  { name: 'Первое фото.', src: './images/photo_grid_1.jpg', id: 0 },
-  { name: 'Второе фото.', src: './images/photo_grid_2.jpg', id: 1 },
-  { name: 'Третье фото.', src: './images/photo_grid_3.jpg', id: 2 },
-  { name: 'Четвёртое фото.', src: './images/photo_grid_4.jpg', id: 3 },
-  { name: 'Пятое фото.', src: './images/photo_grid_5.jpg', id: 4 },
-  { name: 'Шестое фото.', src: './images/photo_grid_6.jpg', id: 5 },
-  { name: 'Седьмое фото.', src: './images/photo_grid_7.jpg', id: 6 },
-  { name: 'Восьмое фото.', src: './images/photo_grid_8.jpg', id: 7 },
+  { name: 'Первое фото.', src: photo_1, id: 0 },
+  { name: 'Второе фото.', src: photo_2, id: 1 },
+  { name: 'Третье фото.', src: photo_3, id: 2 },
+  { name: 'Четвёртое фото.', src: photo_4, id: 3 },
+  { name: 'Пятое фото.', src: photo_5, id: 4 },
+  { name: 'Шестое фото.', src: photo_6, id: 5 },
+  { name: 'Седьмое фото.', src: photo_7, id: 6 },
+  { name: 'Восьмое фото.', src: photo_8, id: 7 },
 ];
+
+export {
+  playsInitialCards,
+  personsInitialCards,
+  threePosters,
+  twoPosters,
+  onePoster,
+  twoVideosInitialSlides,
+  multipleVideosInitialSlides,
+  initialPhotos,
+};

@@ -18,7 +18,7 @@
   border: none;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 990px) {
   .poster-border {
     margin-top: 0;
     flex-direction: column;

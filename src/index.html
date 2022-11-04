@@ -7,15 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="любимовка, феcтиваль, драматургия, театр">
   <title>Любимовка</title>
-  <link rel="icon" href="images/lubimovka_logo.svg">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="pages/index.css" />
+  <link rel="icon" href="<%=require('./images/lubimovka_logo.svg')%>">
 </head>
 
 <body>
   <header class="header">
     <nav class="header__navbar">
-      <img class="header__logo" src="./images/lubimovka_logo.svg" alt="Логотип проекта Любимовка.">
+      <img class="header__logo" src="<%=require('./images/lubimovka_logo.svg')%>" alt="Логотип проекта Любимовка.">
       <ul class="header__section header__section_menu header__list">
         <li class="header__navbar-item"><a class="navbar-item-animation header__navbar-link" target="_blank"
             href="#">Афиша</a></li>
@@ -50,14 +48,14 @@
       </ul>
       <div class="header__section header__section_donation">
         <a class="header__donation-link link-button" href="#">
-          <img class="link-button__img header__donation-icon" src="./images/icon_plus.svg" alt="">
+          <img class="link-button__img header__donation-icon" src="<%=require('./images/icon_plus.svg')%>" alt="Плюс.">
           <span class="link-button__text header__donation-text">Поддержать</span>
         </a>
       </div>
       <div class="header__projects">
         <a class="header__projects-link link-button" target="_blank" href="#">
           <span class="link-button__text">Проекты</span>
-          <img class="header__projects-icon link-button__img" src="./images/icon_arrow.svg" alt="Стрелка.">
+          <img class="header__projects-icon link-button__img" src="<%=require('./images/icon_arrow.svg')%>" alt="Стрелка.">
         </a>
       </div>
     </nav>
@@ -69,7 +67,7 @@
       <div class="else__container">
         <p class="else__text">Межсезонные читки и&nbsp;обсуждение пьес из&nbsp;списка отмеченных отборщиками Любимовки.
           Можно слушать, обсуждать и&nbsp;даже участвовать.</p>
-        <img class="else__image" src="./images/else_photo.png" alt="Фоновое фото блока.">
+        <img class="else__image" src="<%=require('./images/else_photo.png')%>" alt="Фоновое фото блока.">
       </div>
     </section>
     <section class="about">
@@ -166,12 +164,12 @@
       <a class="link-button block-with-button__link" target="_blank"
         href="https://www.youtube.com/channel/UCDZ1HTzBVBxm_vw6tV7C3lg">
         <span class="link-button__text">YOUTUBE</span>
-        <img class=" link-button__img link-button__img_direction_right" src="./images/icon_arrow.svg"
+        <img class=" link-button__img link-button__img_direction_right" src="<%=require('./images/icon_arrow.svg')%>"
           alt="Перейти на YouTube.">
       </a>
     </section>
     <section class="cooperation">
-      <img class="cooperation__asterisk" src="./images/icon_asterisk.svg" alt="Иконка астериск.">
+      <img class="cooperation__asterisk" src="<%=require('./images/icon_asterisk.svg')%>" alt="Иконка астериск.">
       <h2 class="cooperation__title">Проект открыт к&nbsp;сотрудничеству</h2>
       <p class="cooperation__paragraph">Мы&nbsp;находимся в&nbsp;постоянном поиске режиссёров и&nbsp;актеров,
         заинтересованных в&nbsp;постановке читок.</p>
@@ -180,7 +178,7 @@
     </section>
   </main>
   <footer class="footer">
-    <img src="./images/lubimovka_logo_footer.svg" alt="Логотип Любимовка." class="footer__logo">
+    <img src="<%=require('./images/lubimovka_logo_footer.svg')%>" alt="Логотип Любимовка." class="footer__logo">
     <div class="footer__address">
       <p class="footer__address-place">Площадка &laquo;8/3&raquo;</p>
       <p class="footer__address-direction">Москва, ул.&nbsp;Казакова,&nbsp;8,&nbsp;стр.&nbsp;3.
@@ -252,26 +250,26 @@
       <ul class="footer__partners-list">
         <li class="footer__partner-container">
           <a href="https://www.prokhorovfund.ru/" target="_blank" class="footer__partner-link">
-            <img src="./images/partners-logo_fond.svg" alt="Логотип партнёра Фонд Михаила Прохорова."
+            <img src="<%=require('./images/partners-logo_fond.svg')%>" alt="Логотип партнёра Фонд Михаила Прохорова."
               class="footer__partner-logo">
           </a>
           <p class="footer__partner-caption footer__caption">Генеральный партнёр</p>
         </li>
         <li class="footer__partner-container">
           <a href="https://mosbrew.ru/" target="_blank" class="footer__partner-link">
-            <img src="./images/partners-logo_mosbrew.svg" alt="Логотип партнёра Mosbrew." class="footer__partner-logo">
+            <img src="<%=require('./images/partners-logo_mosbrew.svg')%>" alt="Логотип партнёра Mosbrew." class="footer__partner-logo">
           </a>
         </li>
         <li class="footer__partner-container">
           <a href="https://sbtg.ru/" target="_blank" class="footer__partner-link">
-            <img src="./images/partners-logo_sbtg.svg" alt="Логотип партнёра SBTG." class="footer__partner-logo">
+            <img src="<%=require('./images/partners-logo_sbtg.svg')%>" alt="Логотип партнёра SBTG." class="footer__partner-logo">
           </a>
           <p class="footer__partner-caption">Онлайн-трансляции</p>
         </li>
         <li class="footer__partner-container">
           <a href="https://www.youtube.com/channel/UCp2J7GRxQ36QLqW4ReLLt5g" target="_blank"
             class="footer__partner-link">
-            <img src="./images/partners-logo_apogovorit.svg" alt="Логотип партнёра А поговорить."
+            <img src="<%=require('./images/partners-logo_apogovorit.svg')%>" alt="Логотип партнёра А поговорить."
               class="footer__partner-logo">
           </a>
         </li>
@@ -285,7 +283,7 @@
       </div>
       <div class="footer__authors">
         <div class="footer__designers">
-          <img src="./images/shishki_logo.svg" alt="Логотип компании Shishki collective."
+          <img src="<%=require('./images/shishki_logo.svg')%>" alt="Логотип компании Shishki collective."
             class="footer__designers-logo">
           <p class="footer__designers-text">дизайн сайта&nbsp;&mdash; <a
               class="footer__link footer__info-link footer__designers-link" href="#"
@@ -312,7 +310,7 @@
 
   <!-- BURGER POPUP -->
   <div class="burger-popup">
-    <img class="burger-popup__logo" src="./images/lubimovka_logo.svg" alt="Логотип проекта Любимовка.">
+    <img class="burger-popup__logo" src="<%=require('./images/lubimovka_logo.svg')%>" alt="Логотип проекта Любимовка.">
     <nav>
       <ul class="burger-popup__section burger-popup__section_menu">
         <li class="burger-popup__navbar-item"><a class="navbar-item-animation burger-popup__navbar-link" target="_blank"
@@ -374,12 +372,12 @@
           <div class="plays__card-buttons-container">
             <a href="#" target="_blank" class="link-button">
               <p class="link-button__text">Смотреть читку</p>
-              <img src="./images/icon_arrow.svg" alt="Стрелка."
+              <img src="<%=require('./images/icon_arrow.svg')%>" alt="Стрелка."
                 class="link-button__img link-button__img_direction_up-right">
             </a>
             <a href="#" target="_blank" class="link-button">
               <p class="link-button__text">Скачать пьесу</p>
-              <img src="./images/icon_arrow.svg" alt="Стрелка."
+              <img src="<%=require('./images/icon_arrow.svg')%>" alt="Стрелка."
                 class="link-button__img link-button__img_direction_down">
             </a>
           </div>
@@ -424,12 +422,12 @@
         <div class="poster__buttons">
           <a class="poster__button poster__button_about link-button" target="_blank" href="#">
             <img class="poster__button-img link-button__img link-button__img_direction_right"
-              src="./images/icon_arrow.svg" alt="Стрелка.">
+              src="<%=require('./images/icon_arrow.svg')%>" alt="Стрелка.">
             <span class="link-button__text">О спектакле</span>
           </a>
           <a class="poster__button poster__button_tickets link-button" target="_blank" href="#">
             <img class="poster__button-img poster__button-img link-button__img link-button__img_direction_right"
-              src="./images/icon_arrow.svg" alt="Стрелка.">
+              src="<%=require('./images/icon_arrow.svg')%>" alt="Стрелка.">
             <span class="link-button__text">Билеты</span>
           </a>
         </div>
@@ -443,11 +441,6 @@
       <img src="#" alt="#" class="photo-popup__image">
     </div>
   </template>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="scripts/initial-cards.js"></script>
-  <script src="scripts/index.js"></script>
-
 </body>
 
 </html>
