@@ -43,18 +43,6 @@ ___
 * ##### Webpack
 * ##### Git
 ___
-### Техническая информация
-* Страница адаптирована под устройства с расширением от 320px до 1440px;
-* При разработке сайта использованы технологии [grid](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) и [flex](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox), поддерживаемые большинством современных браузеров в последней версии;
-* При разработке сайта использован язык программирования [JavaScript](https://ru.wikipedia.org/wiki/JavaScript);
-* Анимация кнопок создана средствами CSS;
-* Навигация по странице реализована при помощи CSS и JavaScript;
-* Видеоматериалы вставлены при помощи технологии iframe;
-* Анимация слайдеров на странице реализована при помощи [Swiper.js](https://swiperjs.com/);
-* Файловая структура: [БЭМ Nested](https://ru.bem.info/methodology/filestructure/#nested);
-* Проект реорганизован при помощи сборщика модулей [Webpack](https://ru.wikipedia.org/wiki/Webpack).
-
-*[Узнать подробности о поддержке проекта браузерами](https://caniuse.com/?search=grid)*
 
 ### Technical information
 * The page is adapted for devices with an extension from 320px to 1440px;
