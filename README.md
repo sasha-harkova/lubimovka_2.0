@@ -54,7 +54,7 @@ ___
 * Файловая структура: [BEM Nested](https://ru.bem.info/methodology/filestructure/#nested);
 * Проект реорганизован при помощи сборщика модулей [Webpack](https://ru.wikipedia.org/wiki/Webpack).
 
-[Узнать подробности о поддержке проекта браузерами](https://caniuse.com/?search=grid )*
+*[Узнать подробности о поддержке проекта браузерами](https://caniuse.com/?search=grid )**
 
 ___
 **Приятного просмотра!**
